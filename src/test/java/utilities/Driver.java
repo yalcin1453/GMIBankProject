@@ -14,7 +14,12 @@ public class Driver {
     //Why?=>We don't want to create and initialize the driver when we don't need
     //We will create and initialize the driver when it is null
     //We can use Driver class with different browser(chrome,firefox,headless)
+
     //Hello team!
+
+
+    //conflict
+
     private Driver() {
         //we don't want to create another abject. Singleton pattern
     }
