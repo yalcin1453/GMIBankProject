@@ -1,53 +1,34 @@
 package utilities;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class DBUtils {
+public class DatabaseUtility {
     private static Connection connection;
     private static Statement statement;
     private static ResultSet resultSet;
-    //BU METHOD COK KULLANACAGIZ
-    //createConnection database e baglanmak icin. Burda url, username, password u kullanarak database baglaniyoruz
-    //Database e ne zaman baglanmak isterse bu methodu cagrabiliriz
-    //Bu method u data cok BeforeMethod icinde setup icin kullanacagiz
     public static void createConnection() {
-        String url = "jdbc:sqlserver://184.168.194.58:1433;databaseName=kaolapalacedb;user=Ahmet_User;password=Ahmet123!;allowMultiQueries=true";
-        String username="Ahmet_User";
-        String password="Ahmet123!";
+        String url = "jdbc:postgresql://157.230.48.97:5432/gmibank_db";
+        String user = "techprodb_user";
+        String password = "Techpro_@126";
         try {
-            connection = DriverManager.getConnection(url, username, password);
+            connection = DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
-    //BU METHODU COK KULLANACAGIZ
-    //Bu method DatabaDBUTilsse e baglandiktan sonra Yazilan query yi calistirmak icin
-    //Bu method da statement ve resultset objesini olusturup query run ediyoruz
-    public static void executeQuery(String query) {
+    public static void createConnection(String url, String user, String password) {
         try {
-            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        try {
-            resultSet = statement.executeQuery(query);
+            connection = DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
-    //Database baglantisini sonlandirmak icin. Bu Mehtod u test tamamladiktan sonra kullaniriz
     public static void closeConnection() {
         try {
             if (resultSet != null) {
@@ -63,50 +44,9 @@ public class DBUtils {
             e.printStackTrace();
         }
     }
-    //Sonraki 3 methodu sadece connection,statement,resultset kullanmak istedigimizde kullaniriz
-    //connection =>DBUtils.getConnection()
-    //statement => DBUtils.getResultset()
-    //resultSet => DBUtils.getResultset()
-    //getStatement method statement object i olusturmak icin
-    public static Statement getStatement() {
-        try {
-            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return statement;
-    }
-    //getConnection method Connection object i olusturmak icin. Bu method create createConnectiondan farkli olarak connection objesi return ediyor
-    public static Connection getConnection() {
-        String url = "jdbc:sqlserver://184.168.194.58:1433;databaseName=kaolapalacedb;user=Ahmet_User;password=Ahmet123!";
-        String username="Ahmet_User";
-        String password="Ahmet123!";
-        try {
-            connection = DriverManager.getConnection(url, username, password);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return connection;
-    }
-    //getResultset method Resultset object i olusturmak icin.
-    public static ResultSet getResultset() {
-        try {
-            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return resultSet;
-    }
-    //Table da kac satir var
-    public static int getRowCount() throws Exception {
-        resultSet.last();
-        int rowCount = resultSet.getRow();
-        return rowCount;
-    }
     /**
+     *
+     * @param query
      * @return returns a single cell value. If the results in multiple rows and/or
      *         columns of data, only first column of the first row will be returned.
      *         The rest of the data will be ignored
@@ -115,6 +55,8 @@ public class DBUtils {
         return getQueryResultList(query).get(0).get(0);
     }
     /**
+     *
+     * @param query
      * @return returns a list of Strings which represent a row of data. If the query
      *         results in multiple rows and/or columns of data, only first row will
      *         be returned. The rest of the data will be ignored
@@ -123,6 +65,8 @@ public class DBUtils {
         return getQueryResultList(query).get(0);
     }
     /**
+     *
+     * @param query
      * @return returns a map which represent a row of data where key is the column
      *         name. If the query results in multiple rows and/or columns of data,
      *         only first row will be returned. The rest of the data will be ignored
@@ -131,6 +75,8 @@ public class DBUtils {
         return getQueryResultMap(query).get(0);
     }
     /**
+     *
+     * @param query
      * @return returns query result in a list of lists where outer list represents
      *         collection of rows and inner lists represent a single row
      */
@@ -154,6 +100,9 @@ public class DBUtils {
         return rowList;
     }
     /**
+     *
+     * @param query
+     * @param column
      * @return list of values of a single column from the result set
      */
     public static List<Object> getColumnData(String query, String column) {
@@ -172,6 +121,8 @@ public class DBUtils {
         return rowList;
     }
     /**
+     *
+     * @param query
      * @return returns query result in a list of maps where the list represents
      *         collection of rows and a map represents represent a single row with
      *         key being the column name
@@ -195,7 +146,9 @@ public class DBUtils {
         }
         return rowList;
     }
-    /*
+    /**
+     *
+     * @param query
      * @return List of columns returned in result set
      */
     public static List<String> getColumnNames(String query) {
@@ -209,8 +162,29 @@ public class DBUtils {
                 columns.add(rsmd.getColumnName(i));
             }
         } catch (SQLException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return columns;
     }
+    private static void executeQuery(String query) {
+        try {
+            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        try {
+            resultSet = statement.executeQuery(query);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+    public static int getRowCount() throws Exception {
+        resultSet.last();
+        int rowCount = resultSet.getRow();
+        return rowCount;
+    }
 }
+
