@@ -4,15 +4,15 @@ Feature: GMIBank Registration Functionality
   As a user, I should not be able to register with invalid credentials.
 
   @background
-  Background:
-  Scenario:
+  Scenario: Login page navigation to Registration page
     Given User is on the login page
     When User click on user icon link
     Then User click on register link
     And Registration page is opened
 
   @TC001
-  Scenario: User doesn't leave any field blank on the registration form.
+  Scenario: User doesn't leave any field blank on the registration form
+
     And user enters a valid SSN
     And user enters a valid FirstName
     And user enters a valid LastName

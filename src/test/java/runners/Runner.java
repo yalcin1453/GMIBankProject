@@ -1,7 +1,7 @@
 package runners;
 
-import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import io.cucumber.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -13,8 +13,7 @@ import org.junit.runner.RunWith;
         },
         features ="src/test/resources/features",
         glue = "stepdefinitions",
-        dryRun = false,
-        tags = "@background"
+        dryRun = false
 )
 public class Runner {
 }
