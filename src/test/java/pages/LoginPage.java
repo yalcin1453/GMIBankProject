@@ -1,8 +1,17 @@
 package pages;
 
-public class LoginPage {
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-// 11update try to best11
-    // try again dont give up
+public class LoginPage extends BasePage {
+
+    @FindBy(xpath ="(//div[@class='collapse navbar-collapse']/ul/li)[8]" )
+    public WebElement userIcon;
+
+    @FindBy(id = "login-item")
+    public WebElement signIn;
+
+    @FindBy(xpath = "//span[text()='Register']")
+    public WebElement register;
 
 }

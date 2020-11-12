@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
         },
         features ="src/test/resources/features",
         glue = "stepdefinitions",
-        dryRun = false
+        dryRun = false,
+        tags = "@background"
 )
 public class Runner {
 }
