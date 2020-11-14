@@ -14,6 +14,9 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//*[contains(text(),'Your SSN is required')]")
     public WebElement ssnRequiredMessage;
 
+    @FindBy(xpath = "//*[contains(text(),'Your SSN is invalid')]")
+    public WebElement ssnInvalidMessage;
+
 
     @FindBy(xpath = "//input[@name='firstname']")
     public WebElement firstNameInput;
@@ -35,7 +38,10 @@ public class RegistrationPage extends BasePage {
 
 
     @FindBy(xpath = "//input[@name='mobilephone']")
-    public WebElement phoneNumberInput;
+    public WebElement mobilePhoneNumberInput;
+
+    @FindBy(xpath = "//input[@name='Your mobile phone number is invalid']")
+    public WebElement mobilePhoneNumberInvalidMessage;
 
 
     @FindBy(xpath = "//input[@name='username']")
@@ -52,6 +58,8 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//*[contains(text(),'Your email is required')]")
     public WebElement emailRequiredMessage;
 
+    @FindBy(xpath = "//*[contains(text(),'This field is invalid')]")
+    public WebElement emailInvalidMessage;
 
     @FindBy(id = "firstPassword")
     public WebElement passwordInput;

@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="3" time="12.813">
-<testcase classname="" name="_2" time="0.11">
-<skipped message="The scenario has no steps"/>
-</testcase>
-<testcase classname="GMIBank Registration Functionality" name="Login page navigation to Registration page" time="9.333">
-<system-out><![CDATA[Given User is on the login page.............................................passed
-When User click on user icon link...........................................passed
-Then User click on register link............................................passed
-And Registration page is opened.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="GMIBank Registration Functionality" name="User doesn't leave any field blank on the registration form" time="2.847">
-<system-out><![CDATA[And user enters a valid SSN.................................................passed
-And user enters a valid FirstName...........................................passed
-And user enters a valid LastName............................................passed
-And user enters a valid Address.............................................passed
-And user enters a valid Mobile Phone Number.................................passed
-And user enters a valid Username............................................passed
-And user enters a valid Email...............................................passed
-And user enters a valid Password............................................passed
-And user enters the same password for confirmation password.................passed
-Then user clicks on register button.........................................passed
-Then user should see a success message......................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.903">
+<testcase classname="GMIBank Registration Functionality" name="User doesn't leave any field blank on the registration form" time="10.436">
+<system-out><![CDATA[Given user is on the registration page......................................passed
+When user leaves SSN field blank............................................passed
+Then user gets your SSN is required message.................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

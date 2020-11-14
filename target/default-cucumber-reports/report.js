@@ -1,15 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/TC100.feature");
-formatter.feature({
-  "name": "",
-  "description": "",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.uri("file:src/test/resources/features/US002_AC1.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US002_AC1.feature");
 formatter.feature({
   "name": "GMIBank Registration Functionality",
   "description": "  As a user, I should not be able to register with invalid credentials.",
@@ -20,178 +9,84 @@ formatter.feature({
     }
   ]
 });
-formatter.scenario({
-  "name": "Login page navigation to Registration page",
+formatter.scenarioOutline({
+  "name": "User doesn\u0027t leave any field blank on the registration form",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@US_001"
-    },
-    {
-      "name": "@background"
+      "name": "@TC001Negative"
     }
   ]
 });
 formatter.step({
-  "name": "User is on the login page",
+  "name": "user is on the registration page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userIsOnTheLoginPage()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User click on user icon link",
+  "name": "user leaves \u003cfield\u003e field blank",
   "keyword": "When "
 });
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userClickOnUserIconLink()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User click on register link",
+  "name": "user gets your \u003cfield\u003e is required message",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userClickOnRegisterLink()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Registration page is opened",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.registrationPageIsOpened()"
-});
-formatter.result({
-  "status": "passed"
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "field"
+      ]
+    },
+    {
+      "cells": [
+        "SSN"
+      ]
+    }
+  ]
 });
 formatter.scenario({
   "name": "User doesn\u0027t leave any field blank on the registration form",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@US_001"
     },
     {
-      "name": "@TC001"
+      "name": "@TC001Negative"
     }
   ]
 });
 formatter.step({
-  "name": "user enters a valid SSN",
-  "keyword": "And "
+  "name": "user is on the registration page",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.US002_TC1.userEntersAValidSSN()"
+  "location": "stepdefinitions.US002_TC1_Negative.userIsOnTheRegistrationPage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters a valid FirstName",
-  "keyword": "And "
+  "name": "user leaves SSN field blank",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefinitions.US002_TC1.userEntersAValidFirstName()"
+  "location": "stepdefinitions.US002_TC1_Negative.user_leaves_SSN_field_blank()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters a valid LastName",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userEntersAValidLastName()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters a valid Address",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userEntersAValidAddress()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters a valid Mobile Phone Number",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userEntersAValidMobilePhoneNumber()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters a valid Username",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userEntersAValidUsername()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters a valid Email",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userEntersAValidEmail()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters a valid Password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userEntersAValidPassword()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters the same password for confirmation password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userEntersTheSamePasswordForConfirmationPassword()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on register button",
+  "name": "user gets your SSN is required message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.US002_TC1.userClicksOnRegisterButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should see a success message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.US002_TC1.userShouldSeeASuccessMessage()"
+  "location": "stepdefinitions.US002_TC1_Negative.user_gets_your_SSN_is_required_message()"
 });
 formatter.result({
   "status": "passed"

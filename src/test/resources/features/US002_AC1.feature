@@ -1,10 +1,10 @@
-@US_001
+@AC_001
 Feature: GMIBank Registration Functionality
 
   As a user, I should not be able to register with invalid credentials.
 
   @background
-  Scenario: Login page navigation to Registration page
+    Background:
     Given User is on the login page
     When User click on user icon link
     Then User click on register link
@@ -26,7 +26,24 @@ Feature: GMIBank Registration Functionality
     Then user should see a success message
 
   @TC002
-  Scenario: User doesn't leave any field blank on the registration form
+  Scenario Outline: User doesn't leave any field blank on the registration form
+    Given user is on the registration page
+    When user leaves <field> field blank
+    Then user gets your <field> is required message
+    Examples:
+      | field                 |
+      | SSN                   |
+      #| First Name            |
+      #| Last Name             |
+      | Address               |
+      | Mobile Phone Number   |
+      #| Username              |
+      #| Email                 |
+      #| Password              |
+      #| Confirmation Password |
+
+
+
 
 
 

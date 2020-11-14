@@ -1,233 +1,49 @@
 [
   {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2020-11-12T23:04:58.705Z",
-        "line": 2,
-        "name": "",
-        "description": "",
-        "id": ";",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": []
-      }
-    ],
-    "name": "",
-    "description": "",
-    "id": "",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/TC100.feature",
-    "tags": []
-  },
-  {
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-12T23:04:58.855Z",
-        "line": 7,
-        "name": "Login page navigation to Registration page",
+        "start_timestamp": "2020-11-14T07:30:12.928Z",
+        "line": 35,
+        "name": "User doesn\u0027t leave any field blank on the registration form",
         "description": "",
-        "id": "gmibank-registration-functionality;login-page-navigation-to-registration-page",
+        "id": "gmibank-registration-functionality;user-doesn-t-leave-any-field-blank-on-the-registration-form;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8943000000,
+              "duration": 8307000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User is on the login page",
+            "line": 30,
+            "name": "user is on the registration page",
             "match": {
-              "location": "stepdefinitions.US002_TC1.userIsOnTheLoginPage()"
+              "location": "stepdefinitions.US002_TC1_Negative.userIsOnTheRegistrationPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 127000000,
+              "duration": 1937000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User click on user icon link",
+            "line": 31,
+            "name": "user leaves SSN field blank",
             "match": {
-              "location": "stepdefinitions.US002_TC1.userClickOnUserIconLink()"
+              "location": "stepdefinitions.US002_TC1_Negative.user_leaves_SSN_field_blank()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 170000000,
+              "duration": 50000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "User click on register link",
+            "line": 32,
+            "name": "user gets your SSN is required message",
             "match": {
-              "location": "stepdefinitions.US002_TC1.userClickOnRegisterLink()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 58000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Registration page is opened",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.registrationPageIsOpened()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_001"
-          },
-          {
-            "name": "@background"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-12T23:05:08.193Z",
-        "line": 14,
-        "name": "User doesn\u0027t leave any field blank on the registration form",
-        "description": "",
-        "id": "gmibank-registration-functionality;user-doesn-t-leave-any-field-blank-on-the-registration-form",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 242000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user enters a valid SSN",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userEntersAValidSSN()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 116000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user enters a valid FirstName",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userEntersAValidFirstName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 153000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user enters a valid LastName",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userEntersAValidLastName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 167000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user enters a valid Address",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userEntersAValidAddress()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 157000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user enters a valid Mobile Phone Number",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userEntersAValidMobilePhoneNumber()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 204000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user enters a valid Username",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userEntersAValidUsername()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 219000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user enters a valid Email",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userEntersAValidEmail()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 225000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user enters a valid Password",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userEntersAValidPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 221000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "user enters the same password for confirmation password",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userEntersTheSamePasswordForConfirmationPassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 141000000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "user clicks on register button",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userClicksOnRegisterButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "user should see a success message",
-            "match": {
-              "location": "stepdefinitions.US002_TC1.userShouldSeeASuccessMessage()"
+              "location": "stepdefinitions.US002_TC1_Negative.user_gets_your_SSN_is_required_message()"
             },
             "keyword": "Then "
           }
@@ -237,7 +53,7 @@
             "name": "@US_001"
           },
           {
-            "name": "@TC001"
+            "name": "@TC001Negative"
           }
         ]
       }
