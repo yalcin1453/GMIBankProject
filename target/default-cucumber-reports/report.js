@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_14.feature");
 formatter.feature({
   "name": "User can manage accounts",
@@ -57,10 +58,21 @@ formatter.result({
 });
 formatter.scenario({
   "name": "User can not typed earlier,in the past,at the time of creation an account",
+=======
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/uiFeatures/Us_12.feature");
+formatter.feature({
+  "name": "",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "",
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
+<<<<<<< HEAD
       "name": "@US_14"
     },
     {
@@ -164,10 +176,30 @@ formatter.scenario({
     },
     {
       "name": "@TC_2"
+=======
+      "name": "@login"
+    }
+  ]
+});
+formatter.uri("file:src/test/resources/uiFeatures/us004_login.feature");
+formatter.feature({
+  "name": "us004_login",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "name": "US_004 TC001 Login page should accessible with valid credentials",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
     }
   ]
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "User click on \"Manage Accounts\"",
   "keyword": "Given "
 });
@@ -471,10 +503,66 @@ formatter.scenario({
     },
     {
       "name": "@TC_5"
+=======
+  "name": "user is on homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "user click on login icon",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user click on signin",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "user enters username \"\u003cusername\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user enters password \"\u003cpassword\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user click on siginButton",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "verify user is loged in",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "Users Admin User Customer Manager",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password"
+      ]
+    },
+    {
+      "cells": [
+        "Admin3",
+        "TechAdmin3"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "US_004 TC001 Login page should accessible with valid credentials",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@login"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
     }
   ]
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "User Click on \"Manage Customer\"",
   "keyword": "Given "
 });
@@ -525,11 +613,29 @@ formatter.step({
 });
 formatter.match({
   "location": "stepdefinitions.US_14.user_go_to_the_sign_in_page()"
+=======
+  "name": "user is on homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefinitions.TC001.user_is_on_homepage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+  "name": "user click on login icon",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+<<<<<<< HEAD
   "name": "User type username and password than click on sign in button",
   "keyword": "When "
 });
@@ -604,11 +710,29 @@ formatter.step({
 });
 formatter.match({
   "location": "stepdefinitions.US_14.user_go_to_the_sign_in_page()"
+=======
+  "name": "user click on signin",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefinitions.TC001.user_click_on_signin()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+  "name": "user enters username \"Admin3\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+<<<<<<< HEAD
   "name": "User type username and password than click on sign in button",
   "keyword": "When "
 });
@@ -691,5 +815,35 @@ formatter.match({
 });
 formatter.result({
   "status": "skipped"
+=======
+  "name": "user enters password \"TechAdmin3\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user click on siginButton",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.TC001.user_click_on_siginButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "verify user is loged in",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefinitions.TC001.verify_user_is_loged_in()"
+});
+formatter.result({
+  "status": "passed"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
 });
 });

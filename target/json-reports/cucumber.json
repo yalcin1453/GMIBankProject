@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "line": 2,
     "elements": [
       {
@@ -802,11 +803,72 @@
                 }
               ],
               "location": "stepdefinitions.US_14.user_click_on_dropdown_menu(java.lang.String)"
+=======
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-14T04:11:06.453Z",
+        "line": 5,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeatures/Us_12.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-14T04:11:06.525Z",
+        "line": 15,
+        "name": "US_004 TC001 Login page should accessible with valid credentials",
+        "description": "",
+        "id": "us004-login;us-004-tc001-login-page-should-accessible-with-valid-credentials;users-admin-user-customer-manager;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7432000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on homepage",
+            "match": {
+              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 91000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on login icon",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "status": "skipped"
             },
             "line": 7,
@@ -902,11 +964,21 @@
             "name": "User type username and password than click on sign in button",
             "match": {
               "location": "stepdefinitions.US_14.user_type_username_and_password_than_click_on_sign_in_button()"
+=======
+              "duration": 10108000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on signin",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_signin()"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
             },
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1000000,
               "status": "skipped"
             },
@@ -920,11 +992,27 @@
                 }
               ],
               "location": "stepdefinitions.US_14.user_click_on_dropdown_menu(java.lang.String)"
+=======
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters username \"Admin3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin3\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "status": "skipped"
             },
             "line": 7,
@@ -1001,31 +1089,73 @@
                 }
               ],
               "location": "stepdefinitions.US_14.user_click_on_the_textbox_and_type_a_valid_SSN_number_and_Click_on_the_Search_button(java.lang.String)"
+=======
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters password \"TechAdmin3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TechAdmin3\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click on siginButton",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
               "status": "skipped"
             },
             "line": 54,
             "name": "User click in Zelle Enrolled radio button ,click save button",
             "match": {
               "location": "stepdefinitions.US_14.user_click_in_Zelle_Enrolled_radio_button_click_save_button()"
+=======
+              "duration": 263000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify user is loged in",
+            "match": {
+              "location": "stepdefinitions.TC001.verify_user_is_loged_in()"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
             "name": "@US_14"
           },
           {
             "name": "@TC_7"
+=======
+            "name": "@login"
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "User can manage accounts",
     "description": "",
     "id": "user-can-manage-accounts",
@@ -1041,5 +1171,13 @@
         }
       }
     ]
+=======
+    "name": "us004_login",
+    "description": "",
+    "id": "us004-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeatures/us004_login.feature",
+    "tags": []
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
   }
 ]

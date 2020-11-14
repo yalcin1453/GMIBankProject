@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="7" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="22.306">
 <testcase classname="User can manage accounts" name="User can not typed earlier,in the past,at the time of creation an account" time="8.134">
 <failure message="Element should have been &quot;select&quot; but was &quot;a&quot;&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'apple-MacBook-Pro.local', ip: 'fe80:0:0:0:8fd:cd3d:c619:6e13%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_251'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.support.ui.UnexpectedTagNameException"><![CDATA[Given User go to the sign in page...........................................passed
@@ -264,5 +265,20 @@ Session ID: b54581b7265fb8e1733cf2e8a8395e06
 	at stepdefinitions.US_14.user_type_username_and_password_than_click_on_sign_in_button(US_14.java:21)
 	at ✽.User type username and password than click on sign in button(file:///Users/apple/IdeaProjects/MeetSizeProject/GMIBankProject/src/test/resources/features/US_14.feature:5)
 ]]></failure>
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="2" time="18.453">
+<testcase classname="" name="_2" time="0.054">
+<skipped message="The scenario has no steps"/>
+</testcase>
+<testcase classname="us004_login" name="US_004 TC001 Login page should accessible with valid credentials" time="18.114">
+<system-out><![CDATA[Given user is on homepage...................................................passed
+And user click on login icon................................................passed
+When user click on signin...................................................passed
+And user enters username "Admin3"...........................................passed
+And user enters password "TechAdmin3".......................................passed
+And user click on siginButton...............................................passed
+Then verify user is loged in................................................passed
+]]></system-out>
+>>>>>>> abe877d2cc86f0bf83add191cc26a411e6c6e236
 </testcase>
 </testsuite>
