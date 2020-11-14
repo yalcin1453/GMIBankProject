@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.903">
-<testcase classname="GMIBank Registration Functionality" name="User doesn't leave any field blank on the registration form" time="10.436">
-<system-out><![CDATA[Given user is on the registration page......................................passed
-When user leaves SSN field blank............................................passed
-Then user gets your SSN is required message.................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="4" time="20.848">
+<testcase classname="GMIBank Registration Functionality" name="_2" time="18.74">
+<system-out><![CDATA[Given User is on the registration page......................................passed
+When User enters an email which contains @ sign and .com extension..........passed
+Then User shouldn't see email invalid message...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="GMIBank Registration Functionality" name="_3" time="0.667">
+<system-out><![CDATA[Given User is on the registration page......................................passed
+When User enters an email which doesn't  contain @ sign  and .com extension.passed
+Then User should see email invalid message..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="GMIBank Registration Functionality" name="_4" time="0.379">
+<skipped><![CDATA[Given User is on the registration page......................................passed
+When User enters an email which contains @ sign but doesn’t contain .com extension.undefined
+Then User should see email invalid message..................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="GMIBank Registration Functionality" name="_5" time="0.542">
+<system-out><![CDATA[Given User is on the registration page......................................passed
+When User enters an email which doesn't contain @ sign, but contains .com extension.passed
+Then User should see email invalid message..................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

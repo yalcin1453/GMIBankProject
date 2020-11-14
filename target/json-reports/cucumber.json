@@ -3,57 +3,255 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-14T07:30:12.928Z",
-        "line": 35,
-        "name": "User doesn\u0027t leave any field blank on the registration form",
+        "line": 6,
+        "name": "",
         "description": "",
-        "id": "gmibank-registration-functionality;user-doesn-t-leave-any-field-blank-on-the-registration-form;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 8307000000,
+              "duration": 8078000000,
               "status": "passed"
             },
-            "line": 30,
-            "name": "user is on the registration page",
+            "line": 7,
+            "name": "User is on the registration page",
             "match": {
-              "location": "stepdefinitions.US002_TC1_Negative.userIsOnTheRegistrationPage()"
+              "location": "stepdefinitions.US002_TC2.userIsOnTheRegistrationPage()"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T16:30:51.654Z",
+        "line": 10,
+        "name": "",
+        "description": "",
+        "id": "gmibank-registration-functionality;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 1937000000,
+              "duration": 450000000,
               "status": "passed"
             },
-            "line": 31,
-            "name": "user leaves SSN field blank",
+            "line": 11,
+            "name": "User enters an email which contains @ sign and .com extension",
             "match": {
-              "location": "stepdefinitions.US002_TC1_Negative.user_leaves_SSN_field_blank()"
+              "location": "stepdefinitions.US002_TC4.userEntersAnEmailWhichContainsSignAndComExtension()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 50000000,
+              "duration": 10078000000,
               "status": "passed"
             },
-            "line": 32,
-            "name": "user gets your SSN is required message",
+            "line": 12,
+            "name": "User shouldn\u0027t see email invalid message",
             "match": {
-              "location": "stepdefinitions.US002_TC1_Negative.user_gets_your_SSN_is_required_message()"
+              "location": "stepdefinitions.US002_TC4.userShouldnTSeeEmailInvalidMessage()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US_001"
+            "name": "@AC_004"
           },
           {
-            "name": "@TC001Negative"
+            "name": "@TC0013"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 386000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the registration page",
+            "match": {
+              "location": "stepdefinitions.US002_TC2.userIsOnTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T16:31:10.411Z",
+        "line": 15,
+        "name": "",
+        "description": "",
+        "id": "gmibank-registration-functionality;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enters an email which doesn\u0027t  contain @ sign  and .com extension",
+            "match": {
+              "location": "stepdefinitions.US002_TC4.userEntersAnEmailWhichDoesnTContainSignAndComExtension()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 96000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should see email invalid message",
+            "match": {
+              "location": "stepdefinitions.US002_TC4.userShouldSeeEmailInvalidMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AC_004"
+          },
+          {
+            "name": "@TC0014"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 372000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the registration page",
+            "match": {
+              "location": "stepdefinitions.US002_TC2.userIsOnTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T16:31:11.117Z",
+        "line": 20,
+        "name": "",
+        "description": "",
+        "id": "gmibank-registration-functionality;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "User enters an email which contains @ sign but doesn’t contain .com extension",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User should see email invalid message",
+            "match": {
+              "location": "stepdefinitions.US002_TC4.userShouldSeeEmailInvalidMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AC_004"
+          },
+          {
+            "name": "@TC0015"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 294000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the registration page",
+            "match": {
+              "location": "stepdefinitions.US002_TC2.userIsOnTheRegistrationPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-14T16:31:11.512Z",
+        "line": 25,
+        "name": "",
+        "description": "",
+        "id": "gmibank-registration-functionality;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User enters an email which doesn\u0027t contain @ sign, but contains .com extension",
+            "match": {
+              "location": "stepdefinitions.US002_TC4.userEntersAnEmailWhichDoesnTContainSignButContainsComExtension()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User should see email invalid message",
+            "match": {
+              "location": "stepdefinitions.US002_TC4.userShouldSeeEmailInvalidMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AC_004"
+          },
+          {
+            "name": "@TC0016"
           }
         ]
       }
@@ -62,10 +260,10 @@
     "description": "  As a user, I should not be able to register with invalid credentials.",
     "id": "gmibank-registration-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US002_AC1.feature",
+    "uri": "file:src/test/resources/features/US002_AC4.feature",
     "tags": [
       {
-        "name": "@US_001",
+        "name": "@AC_004",
         "type": "Tag",
         "location": {
           "line": 1,

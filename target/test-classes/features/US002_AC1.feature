@@ -3,7 +3,6 @@ Feature: GMIBank Registration Functionality
 
   As a user, I should not be able to register with invalid credentials.
 
-  @background
     Background:
     Given User is on the login page
     When User click on user icon link
@@ -33,6 +32,14 @@ Feature: GMIBank Registration Functionality
     Examples:
       | field                 |
       | SSN                   |
+      #| First Name            |
+      #| Last Name             |
+      #| Address               |
+     # | Mobile Phone Number   |
+      #| Username              |
+      #| Email                 |
+      #| Password              |
+      #| Confirmation Password |
 
 
 

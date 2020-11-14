@@ -40,9 +40,8 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//input[@name='mobilephone']")
     public WebElement mobilePhoneNumberInput;
 
-    @FindBy(xpath = "//input[@name='Your mobile phone number is invalid']")
+    @FindBy(xpath = "//*[contains(text(),'Your mobile phone number is invalid')]")
     public WebElement mobilePhoneNumberInvalidMessage;
-
 
     @FindBy(xpath = "//input[@name='username']")
     public WebElement usernameInput;
