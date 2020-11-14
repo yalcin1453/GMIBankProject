@@ -34,6 +34,7 @@ public class TC001 {
     @When("user click on signin")
     public void user_click_on_signin() {
         // Write code here that turns the phrase above into concrete actions
+        Driver.wait(10);
         loginPage.signInLink.click();
 
     }

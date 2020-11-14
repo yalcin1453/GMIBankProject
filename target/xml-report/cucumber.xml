@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="2" time="18.453">
+<testcase classname="" name="_2" time="0.054">
+<skipped message="The scenario has no steps"/>
+</testcase>
+<testcase classname="us004_login" name="US_004 TC001 Login page should accessible with valid credentials" time="18.114">
+<system-out><![CDATA[Given user is on homepage...................................................passed
+And user click on login icon................................................passed
+When user click on signin...................................................passed
+And user enters username "Admin3"...........................................passed
+And user enters password "TechAdmin3".......................................passed
+And user click on siginButton...............................................passed
+Then verify user is loged in................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

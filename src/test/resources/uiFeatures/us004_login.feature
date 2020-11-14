@@ -1,5 +1,6 @@
-Feature: us004_login
 
+Feature: us004_login
+  @login
   Scenario Outline: US_004 TC001 Login page should accessible with valid credentials
     Given user is on homepage
     And user click on login icon
