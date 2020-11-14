@@ -79,12 +79,12 @@ public class US002_TC1 {
 
     @And("user enters a valid Password")
     public void userEntersAValidPassword() {
-        registrationPage.passwordInput.sendKeys("john123");
+        registrationPage.passwordInput.sendKeys("John123!");
     }
 
     @And("user enters the same password for confirmation password")
     public void userEntersTheSamePasswordForConfirmationPassword() {
-        registrationPage.secondPasswordInput.sendKeys("john123");
+        registrationPage.secondPasswordInput.sendKeys("John123!");
     }
 
     @Then("user clicks on register button")

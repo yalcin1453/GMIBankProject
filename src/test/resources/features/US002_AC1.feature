@@ -24,3 +24,12 @@ Feature: GMIBank Registration Functionality
     And user enters the same password for confirmation password
     Then user clicks on register button
     Then user should see a success message
+
+  @TC002
+  Scenario: User doesn't leave any field blank on the registration form
+
+
+
+
+
+
