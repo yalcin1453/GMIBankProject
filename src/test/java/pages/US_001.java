@@ -1,59 +1,58 @@
 package pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import utilities.Driver;
 
 public class US_001 {
     /**
      * @author Orhan Demirci
      */
+    public US_001() {
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
 
     @FindBy(how = How.XPATH, using = "//*[@id='account-menu']/a")
-    public static WebElement userButton;
+    public WebElement userButton;
 
     @FindBy(how = How.XPATH, using = "//*[text()='Register']")
-    public static WebElement registerButton;
+    public  WebElement registerButton;
+
+    @FindBy(how = How.XPATH, using = "//*[@id='register-title']/span")
+    public  WebElement registrationHeader;
 
     @FindBy(how = How.ID, using = "ssn")
-    public static WebElement ssnBox;
+    public  WebElement ssnBox;
 
     @FindBy(how = How.ID, using = "firstname")
-    public static WebElement firstNameBox;
+    public  WebElement firstNameBox;
 
     @FindBy(how = How.ID, using = "lastname")
-    public static WebElement lastNameBox;
+    public  WebElement lastNameBox;
 
     @FindBy(how = How.ID, using = "address")
-    public static WebElement addressBox;
+    public  WebElement addressBox;
 
     @FindBy(how = How.ID, using = "mobilephone")
-    public static WebElement phoneBox;
+    public  WebElement phoneBox;
 
     @FindBy(how = How.ID, using = "username")
-    public static WebElement usernameBox;
+    public  WebElement usernameBox;
 
     @FindBy(how = How.ID, using = "email")
-    public static WebElement emailBox;
+    public  WebElement emailBox;
 
     @FindBy(how = How.ID, using = "firstPassword")
-    public static WebElement passwordBox;
+    public  WebElement passwordBox;
 
     @FindBy(how = How.ID, using = "secondPassword")
-    public static WebElement passwordConfirmBox;
+    public  WebElement passwordConfirmBox;
 
    @FindBy(how = How.XPATH, using = "//*[@id='register-submit']//*[text()='Register']")
-    public static WebElement submitButton;
-
-
-
-
-
-
-
-
-
-
+    public  WebElement submitButton;
 
 
 
