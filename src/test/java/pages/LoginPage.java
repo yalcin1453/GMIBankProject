@@ -2,26 +2,12 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-<<<<<<< HEAD
 
-public class LoginPage extends BasePage {
-
-    @FindBy(xpath ="(//div[@class='collapse navbar-collapse']/ul/li)[8]" )
-    public WebElement userIcon;
-
-    @FindBy(id = "login-item")
-    public WebElement signIn;
-
-    @FindBy(xpath = "//span[text()='Register']")
-    public WebElement register;
-=======
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class LoginPage {
 
-    // 11update try to best11
-    // try again dont give up
     public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -49,7 +35,5 @@ public class LoginPage {
 
     @FindBy(xpath="//button[@class='btn btn-secondary']")
     public WebElement cancelButton;
-
->>>>>>> master
 
 }
