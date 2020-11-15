@@ -1,0 +1,248 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user navigates to GMI bank application",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "click on sign button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T06:05:33.859Z",
+        "line": 7,
+        "name": "Login with invalid username",
+        "description": "",
+        "id": "login-page-should-not-be-accessible-with-invalid-credentials;login-with-invalid-username",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User cannot login with invalid username validating the error message",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user navigates to GMI bank application",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "click on sign button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T06:05:34.163Z",
+        "line": 11,
+        "name": "Login with invalid password",
+        "description": "",
+        "id": "login-page-should-not-be-accessible-with-invalid-credentials;login-with-invalid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User cannot login with invalid password validating the error message",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user navigates to GMI bank application",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "click on sign button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T06:05:34.179Z",
+        "line": 15,
+        "name": "invalid username and password",
+        "description": "",
+        "id": "login-page-should-not-be-accessible-with-invalid-credentials;invalid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User cannot login with invalid username and password validating the error message",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user navigates to GMI bank application",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "click on sign button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T06:05:34.196Z",
+        "line": 18,
+        "name": "given an option to reset their password",
+        "description": "",
+        "id": "login-page-should-not-be-accessible-with-invalid-credentials;given-an-option-to-reset-their-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "User with invalid credentials should be given an option to reset their password",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user navigates to GMI bank application",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "click on sign button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-12T06:05:34.213Z",
+        "line": 21,
+        "name": "given the option to navigate to registration page",
+        "description": "",
+        "id": "login-page-should-not-be-accessible-with-invalid-credentials;given-the-option-to-navigate-to-registration-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "User should be given the option to navigate to registration page if they did not register yet",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login page should not be accessible with invalid credentials",
+    "description": "",
+    "id": "login-page-should-not-be-accessible-with-invalid-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TC_005.feature",
+    "tags": []
+  }
+]
