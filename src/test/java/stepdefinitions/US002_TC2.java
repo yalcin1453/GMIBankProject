@@ -12,13 +12,11 @@ import utilities.Driver;
 public class US002_TC2 {
     RegistrationPage registrationPage=new RegistrationPage();
 
-
     @Given("User is on the registration page")
     public void userIsOnTheRegistrationPage() {
 
         Driver.getDriver().get("http://gmibank.com/account/register");
     }
-
 
     @When("User enters an SSN number and SSN number has -")
     public void userEntersAnSSNNumberAndSSNNumberHas() {

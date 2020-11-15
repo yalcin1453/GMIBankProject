@@ -22,23 +22,24 @@ public class US002_TC1 {
     RegistrationPage registrationPage=new RegistrationPage();
     Faker faker= new Faker();
 
+    /*
     @Given("User is on the login page")
     public void userIsOnTheLoginPage() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
-    @When("User click on user icon link")
-    public void userClickOnUserIconLink() {
-        loginPage.userIcon.click();
+     @When("User click on user icon link")
+     public void userClickOnUserIconLink() {
+       loginPage.userIcon.click();
     }
 
     @Then("User click on register link")
     public void userClickOnRegisterLink() {
-        loginPage.register.click();
+    loginPage.register.click();
     }
 
-    @And("Registration page is opened")
-    public void registrationPageIsOpened() {
+   @And("Registration page is opened")
+   public void registrationPageIsOpened() {
 
         String actualTitle=registrationPage.registrationPageTitle.getText();
         String expectedTitle="Registration";
@@ -103,6 +104,35 @@ public class US002_TC1 {
         WebElement ew=wait.until(ExpectedConditions.visibilityOf(registrationPage.successMessage));
         Assert.assertTrue(ew.getText().contains("Please check your email for confirmation"));
     }
+
+*/
+
+    @Given("user is on the registration page")
+    public void userIsOnTheRegistrationPage() {
+        Driver.getDriver().get("http://gmibank.com/account/register");
+    }
+
+    @When("user leaves SSN field blank")
+    public void user_leaves_SSN_field_blank() {
+        registrationPage.firstNameInput.sendKeys(faker.name().firstName());
+        registrationPage.lastNameInput.sendKeys(faker.name().lastName());
+        registrationPage.addressInput.sendKeys(faker.address().fullAddress());
+        registrationPage.mobilePhoneNumberInput.sendKeys("111-111-1111");
+        registrationPage.usernameInput.sendKeys(faker.name().username());
+        registrationPage.emailInput.sendKeys(faker.internet().emailAddress());
+        registrationPage.passwordInput.sendKeys("Aaaa12!");
+        registrationPage.secondPasswordInput.sendKeys("Aaaa12!");
+        registrationPage.registerButton.click();
+    }
+
+    @Then("user gets your SSN is required message")
+    public void user_gets_your_SSN_is_required_message() {
+        String expectedMessage="Your SSN is required";
+        String actualMessage=registrationPage.ssnRequiredMessage.getText();
+        Assert.assertTrue(actualMessage.contains(expectedMessage));
+    }
+
+
 
 
 }
