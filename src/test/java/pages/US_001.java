@@ -45,6 +45,9 @@ public class US_001 {
    @FindBy(how = How.XPATH, using = "//*[@id='register-submit']//*[text()='Register']")
     public static WebElement submitButton;
 
+   @FindBy(xpath = "//*[text()='Registration saved!']")
+    public WebElement successMessage;
+
 
 
 
