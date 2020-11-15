@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.support.ui.Select;
 import pages.Userstory14;
 import utilities.ConfigurationReader;
+import utilities.DateUtil;
 import utilities.Driver;
 
 public class US_14 {
@@ -37,7 +38,7 @@ public class US_14 {
 
     @When("User Click on the Create Date textbox and type the time of account creation")
     public void user_Click_on_the_Create_Date_textbox_and_type_the_time_of_account_creation() {
-
+        DateUtil.todaysDate3();
     }
 
     @Then("User click on the Closed Date textbox and type the time later than the time of account creation")
