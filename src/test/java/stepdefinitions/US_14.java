@@ -3,14 +3,15 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.support.ui.Select;
-import pages.Userstory14;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import pages.Us_014pages;
 import utilities.ConfigurationReader;
 import utilities.DateUtil;
 import utilities.Driver;
 
 public class US_14 {
-    Userstory14 object=new Userstory14();
+    Us_014pages object=new Us_014pages();
 
     @Given("User go to the sign in page")
     public void user_go_to_the_sign_in_page() {
@@ -73,37 +74,40 @@ public class US_14 {
 
     @Given("User Click on {string}")
     public void user_Click_on(String string) {
-
+    object.manageCustomersButton.click();
     }
 
     @Given("Click on {string}")
     public void click_on(String string) {
+        object.createNewCustomer.click();
 
     }
 
     @Given("Click on the {string} textbox and type a valid SSN number and Click on the Search button")
     public void click_on_the_textbox_and_type_a_valid_SSN_number_and_Click_on_the_Search_button(String string) {
-
+    object.ssn.sendKeys("124-45-3422");
+    object.Searchssn.click();
     }
 
     @Then("User textbox should not be blank")
     public void user_textbox_should_not_be_blank() {
-
+        Boolean isDisplayed=Driver.getDriver().findElement(By.id("tp-customer-firstName")).isDisplayed();
+        Assert.assertTrue(isDisplayed);
     }
 
     @Then("Click an ID item to choose an account created on manage accounts")
     public void click_an_ID_item_to_choose_an_account_created_on_manage_accounts() {
-
+        object.idNum.click();
+        Boolean isDisplayedNme=Driver.getDriver().findElement(By.xpath("//dd[.='Elena']")).isDisplayed();
+        Assert.assertTrue(isDisplayedNme);
     }
 
-    @When("User click on the {string} textbox and type a valid SSN number and Click on the Search button")
-    public void user_click_on_the_textbox_and_type_a_valid_SSN_number_and_Click_on_the_Search_button(String string) {
-
-    }
 
     @Then("User click in Zelle Enrolled radio button ,click save button")
     public void user_click_in_Zelle_Enrolled_radio_button_click_save_button() {
-
+    object.zelleradio.click();
+    boolean isZelle=Driver.getDriver().findElement(By.id("tp-customer-zelleEnrolled")).isEnabled();
+    Assert.assertTrue(isZelle);
     }
 
 
