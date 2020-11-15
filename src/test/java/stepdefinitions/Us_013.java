@@ -55,7 +55,7 @@ Driver.selectRandomTextFromDropdown(new Select(us_013.accountStatusType));
 
     @When("user selects employee {string}")
     public void user_selects_employee(String string) {
-Driver.selectRandomTextFromDropdown(new Select(us_013.employee));
+//Driver.selectRandomTextFromDropdown(new Select(us_013.employee));
     }
 
     @When("user clicks save button")
