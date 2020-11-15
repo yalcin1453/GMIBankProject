@@ -5,12 +5,21 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class US_010 {
+public class US_09 {
 
-
-    public US_010(){
+    public US_09(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
+
+    @FindBy(xpath = "//div[@class='dropdown-menu dropdown-menu-right show']")
+    public WebElement myOperationButton;
+
+
+    @FindBy(xpath = "//a[@class='dropdown-item']")
+    public WebElement manageCustomerButton;
+
+    @FindBy(xpath = "//a[@id='jh-create-entity']")
+    public WebElement createNewCustomerButton;
 
     @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/span[1]")
     public WebElement createorEditaCustomerText;
@@ -74,4 +83,5 @@ public class US_010 {
 
     @FindBy(xpath = "//button[@id='save-entity']")
     public WebElement saveButton;
+
 }
