@@ -17,6 +17,5 @@ Feature: New User Registration
     Then User validates the success message
 
     Examples:
-      | SSN            | firstname | lastname| address                                         | phone number | username | email                  | password | confirm password |
-      |  789-22-6750   | John      | Apple   | 428 Los Altos Way, Altamonte Springs, FL, 32714 | 407-456-3215 | hulk     | jyyykk@outlook.com     | 1234A.   | 1234A.           |
-      |  789-22-6750  | John       | Apple   | 428 Los Altos Way, Altamonte Springs, FL, 32714 | 407-456-3215 | 345      | jyyykk@outlook.com     | 1234A.   | 1234A.           |
+      | SSN            | firstname | lastname| address                                         | phone number | username | email               | password | confirm password |
+      |  671-22-6750   | John      | Apple   | 428 Los Altos Way, Altamonte Springs, FL, 32714 | 407-456-3215 | hulk     | klghj@outlook.com     | 1234A.   | 1234A.           |

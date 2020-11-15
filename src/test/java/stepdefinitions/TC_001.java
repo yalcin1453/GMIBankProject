@@ -68,10 +68,8 @@ public class TC_001 {
         user.submitButton.click();
     }
     @Then("^User validates the success message$")
-    public void validateSuccessMessage() throws InterruptedException {
-        Thread.sleep(30);
-        Alert alert = Driver.getDriver().switchTo().alert();
-        System.out.println(alert.getText());
-        //Assert.assertEquals("",alert.getText());
+    public void validateSuccessMessage()  {
+     Driver.wait(2);
+     Assert.assertEquals("Registration saved!",user.successMessage.getText());
     }
 }
