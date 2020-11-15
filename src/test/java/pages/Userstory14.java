@@ -29,4 +29,10 @@ public class Userstory14 {
     @FindBy(xpath = "//*[contains(text(),'Create a new Account')]")
     public WebElement createNewAccount;
 
+    @FindBy(id = "tp-account-createDate")
+    public WebElement createDate;
+
+    @FindBy(id = "tp-account-closedDate")
+    public WebElement closedDate;
+
 }
