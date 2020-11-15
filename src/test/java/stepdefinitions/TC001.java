@@ -74,6 +74,7 @@ public class TC001 {
         //WebDriverWait wait=new WebDriverWait(Driver.getDriver(),20);
         //Assert.assertTrue(loginPage.cancelButton.isDisplayed());
         Assert.assertTrue(loginPage.cancelButton.isEnabled());
+        System.out.println("this is verification of cancel button");
 
     }
 
