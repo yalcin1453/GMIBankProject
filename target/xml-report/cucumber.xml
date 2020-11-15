@@ -1,2 +1,147 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.027"/>
+=======
+<testsuite errors="0" failures="7" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="10.674">
+<testcase classname="Password segment on Homepage should be editable" name="US_008 Password segment on Homepage should be editable" time="8.866">
+<failure message="loginIcon" type="java.lang.NoSuchFieldError"><![CDATA[Given user is on homepage...................................................passed
+And user click on login icon................................................failed
+When user click on signin...................................................skipped
+And user enters username "manager12"........................................skipped
+And user enters password "Manager123".......................................skipped
+And user click on siginButton...............................................skipped
+When user is on mainpage....................................................skipped
+When user Fill current password "Manager123"................................skipped
+And user Fill New password with credentials "Manager123"....................skipped
+And user Fill confirmation New password with credentials "Manager123".......skipped
+Then verify the password strength...........................................skipped
+And user click on save button...............................................skipped
+
+StackTrace:
+java.lang.NoSuchFieldError: loginIcon
+	at stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)
+	at ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="US_008 Password segment on Homepage should be editable 2" time="0.293">
+<failure message="loginIcon" type="java.lang.NoSuchFieldError"><![CDATA[Given user is on homepage...................................................passed
+And user click on login icon................................................failed
+When user click on signin...................................................skipped
+And user enters username "manager12"........................................skipped
+And user enters password "Manager123".......................................skipped
+And user click on siginButton...............................................skipped
+When user is on mainpage....................................................skipped
+When user Fill current password "Manager123"................................skipped
+And user Fill New password with credentials "MANAGEr".......................skipped
+And user Fill confirmation New password with credentials "MANAGEr"..........skipped
+Then verify the password strength...........................................skipped
+And user click on save button...............................................skipped
+
+StackTrace:
+java.lang.NoSuchFieldError: loginIcon
+	at stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)
+	at ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="US_008 Password segment on Homepage should be editable 3" time="0.224">
+<failure message="loginIcon" type="java.lang.NoSuchFieldError"><![CDATA[Given user is on homepage...................................................passed
+And user click on login icon................................................failed
+When user click on signin...................................................skipped
+And user enters username "manager12"........................................skipped
+And user enters password "Manager123".......................................skipped
+And user click on siginButton...............................................skipped
+When user is on mainpage....................................................skipped
+When user Fill current password "Manager123"................................skipped
+And user Fill New password with credentials "Manager".......................skipped
+And user Fill confirmation New password with credentials "Manager"..........skipped
+Then verify the password strength...........................................skipped
+And user click on save button...............................................skipped
+
+StackTrace:
+java.lang.NoSuchFieldError: loginIcon
+	at stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)
+	at ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="US_008 Password segment on Homepage should be editable 4" time="0.239">
+<failure message="loginIcon" type="java.lang.NoSuchFieldError"><![CDATA[Given user is on homepage...................................................passed
+And user click on login icon................................................failed
+When user click on signin...................................................skipped
+And user enters username "manager12"........................................skipped
+And user enters password "Manager123".......................................skipped
+And user click on siginButton...............................................skipped
+When user is on mainpage....................................................skipped
+When user Fill current password "Manager123"................................skipped
+And user Fill New password with credentials "Mngr1".........................skipped
+And user Fill confirmation New password with credentials "Mngr1"............skipped
+Then verify the password strength...........................................skipped
+And user click on save button...............................................skipped
+
+StackTrace:
+java.lang.NoSuchFieldError: loginIcon
+	at stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)
+	at ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="US_008 Password segment on Homepage should be editable 5" time="0.241">
+<failure message="loginIcon" type="java.lang.NoSuchFieldError"><![CDATA[Given user is on homepage...................................................passed
+And user click on login icon................................................failed
+When user click on signin...................................................skipped
+And user enters username "manager12"........................................skipped
+And user enters password "Manager123".......................................skipped
+And user click on siginButton...............................................skipped
+When user is on mainpage....................................................skipped
+When user Fill current password "Manager123"................................skipped
+And user Fill New password with credentials "Mngr1!"........................skipped
+And user Fill confirmation New password with credentials "Mngr1!"...........skipped
+Then verify the password strength...........................................skipped
+And user click on save button...............................................skipped
+
+StackTrace:
+java.lang.NoSuchFieldError: loginIcon
+	at stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)
+	at ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="US_008 Password segment on Homepage should be editable 6" time="0.245">
+<failure message="loginIcon" type="java.lang.NoSuchFieldError"><![CDATA[Given user is on homepage...................................................passed
+And user click on login icon................................................failed
+When user click on signin...................................................skipped
+And user enters username "manager12"........................................skipped
+And user enters password "Manager123".......................................skipped
+And user click on siginButton...............................................skipped
+When user is on mainpage....................................................skipped
+When user Fill current password "Manager123"................................skipped
+And user Fill New password with credentials "Manager12!"....................skipped
+And user Fill confirmation New password with credentials "Manager12!".......skipped
+Then verify the password strength...........................................skipped
+And user click on save button...............................................skipped
+
+StackTrace:
+java.lang.NoSuchFieldError: loginIcon
+	at stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)
+	at ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="Password segment on Homepage should be editable" name="US_008 Password segment on Homepage should be editable 7" time="0.243">
+<failure message="loginIcon" type="java.lang.NoSuchFieldError"><![CDATA[Given user is on homepage...................................................passed
+And user click on login icon................................................failed
+When user click on signin...................................................skipped
+And user enters username "manager12"........................................skipped
+And user enters password "Manager123".......................................skipped
+And user click on siginButton...............................................skipped
+When user is on mainpage....................................................skipped
+When user Fill current password "Manager123"................................skipped
+And user Fill New password with credentials "Manager123!"...................skipped
+And user Fill confirmation New password with credentials "Manager123!"......skipped
+Then verify the password strength...........................................skipped
+And user click on save button...............................................skipped
+
+StackTrace:
+java.lang.NoSuchFieldError: loginIcon
+	at stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)
+	at ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)
+]]></failure>
+</testcase>
+</testsuite>
+>>>>>>> master

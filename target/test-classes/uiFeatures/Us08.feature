@@ -9,7 +9,11 @@ Feature: Password segment on Homepage should be editable
     And user click on siginButton
     When user is on mainpage
 
+<<<<<<< HEAD
 @login
+=======
+
+>>>>>>> master
   Scenario Outline: US_008 Password segment on Homepage should be editable
     When user Fill current password "<currentpassword>"
     And user Fill New password with credentials "<newpassword>"
