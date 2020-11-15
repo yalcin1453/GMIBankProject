@@ -25,13 +25,14 @@ public class US_14 {
 
     @When("User click on {string} dropdown menu")
     public void user_click_on_dropdown_menu(String string) {
-        Select option=new Select(object.myOperationsButton);
-        option.selectByIndex(1);
+        object.myOperationsButton.click();
+
     }
 
     @Then("User click on {string}")
     public void user_click_on(String string) {
-
+    object.manageAccountsButton.click();
+    object.createNewAccount.click();
     }
 
     @When("User Click on the Create Date textbox and type the time of account creation")

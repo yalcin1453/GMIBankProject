@@ -26,4 +26,7 @@ public class Userstory14 {
     @FindBy(xpath = "(//span[.='Sign in'])[3]")
     public WebElement signinButton;
 
+    @FindBy(xpath = "//*[contains(text(),'Create a new Account')]")
+    public WebElement createNewAccount;
+
 }
