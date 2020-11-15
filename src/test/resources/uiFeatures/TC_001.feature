@@ -18,4 +18,4 @@ Feature: New User Registration
 
     Examples:
       | SSN            | firstname | lastname| address                                         | phone number | username | email               | password | confirm password |
-      |  671-22-6750   | John      | Apple   | 428 Los Altos Way, Altamonte Springs, FL, 32714 | 407-456-3215 | hulk     | klghj@outlook.com     | 1234A.   | 1234A.           |
+      |  171-45-6350   | John      | Apple   | 428 Los Altos Way, Altamonte Springs, FL, 32714 | 407-456-3215 | hulk     |yyrt@outlook.com     | 1234A.   | 1234A.           |

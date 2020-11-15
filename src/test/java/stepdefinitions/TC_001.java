@@ -71,5 +71,6 @@ public class TC_001 {
     public void validateSuccessMessage()  {
      Driver.wait(2);
      Assert.assertEquals("Registration saved!",user.successMessage.getText());
+     Driver.closeDriver();
     }
 }
