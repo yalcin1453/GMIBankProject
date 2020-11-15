@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.027"/>
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="5" tests="5" time="1.275">
+<testcase classname="Login page should not be accessible with invalid credentials" name="Login with invalid username" time="0.251">
+<skipped><![CDATA[Given user navigates to GMI bank application................................undefined
+And click on sign button....................................................undefined
+Given User cannot login with invalid username validating the error message..undefined
+]]></skipped>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="Login with invalid password" time="0.007">
+<skipped><![CDATA[Given user navigates to GMI bank application................................undefined
+And click on sign button....................................................undefined
+And User cannot login with invalid password validating the error message....undefined
+]]></skipped>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="invalid username and password" time="0.007">
+<skipped><![CDATA[Given user navigates to GMI bank application................................undefined
+And click on sign button....................................................undefined
+And User cannot login with invalid username and password validating the error message.undefined
+]]></skipped>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="given an option to reset their password" time="0.004">
+<skipped><![CDATA[Given user navigates to GMI bank application................................undefined
+And click on sign button....................................................undefined
+And User with invalid credentials should be given an option to reset their password.undefined
+]]></skipped>
+</testcase>
+<testcase classname="Login page should not be accessible with invalid credentials" name="given the option to navigate to registration page" time="0.006">
+<skipped><![CDATA[Given user navigates to GMI bank application................................undefined
+And click on sign button....................................................undefined
+And User should be given the option to navigate to registration page if they did not register yet.undefined
+]]></skipped>
+>>>>>>> master
 =======
 <testsuite errors="0" failures="7" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="10.674">
 <testcase classname="Password segment on Homepage should be editable" name="US_008 Password segment on Homepage should be editable" time="8.866">
@@ -142,6 +175,7 @@ java.lang.NoSuchFieldError: loginIcon
 	at stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)
 	at ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)
 ]]></failure>
+>>>>>>> master
 </testcase>
 </testsuite>
 >>>>>>> master
