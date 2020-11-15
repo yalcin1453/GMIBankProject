@@ -1,5 +1,4 @@
 Feature: Password segment on Homepage should be editable
-
   Background: Login page should accessible with valid credentials
     Given user is on homepage
     And user click on login icon
@@ -8,8 +7,6 @@ Feature: Password segment on Homepage should be editable
     And user enters password "Manager123"
     And user click on siginButton
     When user is on mainpage
-
-@login
   Scenario Outline: US_008 Password segment on Homepage should be editable
     When user Fill current password "<currentpassword>"
     And user Fill New password with credentials "<newpassword>"
