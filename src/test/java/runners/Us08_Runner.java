@@ -1,7 +1,7 @@
 package runners;
 
-import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -11,24 +11,10 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features ="src/test/resources",
+        features ="src/test/resources/UiFeatures/Us08.feature",
         glue = "stepdefinitions",
-<<<<<<< HEAD:src/test/java/runners/US002_Runner.java
-        dryRun = false,
-        tags = "@AC_004"
-
-)
-public class Runner {
-
-=======
-
-
-        tags = "@login",
-
         dryRun = false
 )
-public class Runner {
 
-
->>>>>>> master:src/test/java/runners/Runner.java
+public class Us08_Runner {
 }

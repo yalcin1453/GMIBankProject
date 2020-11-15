@@ -1,16 +1,25 @@
 [
   {
+<<<<<<< HEAD
     "line": 2,
     "elements": [
       {
         "line": 6,
         "name": "",
+=======
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login page should accessible with valid credentials",
+>>>>>>> master
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 8078000000,
               "status": "passed"
             },
@@ -20,10 +29,670 @@
               "location": "stepdefinitions.US002_TC2.userIsOnTheRegistrationPage()"
             },
             "keyword": "Given "
+=======
+              "duration": 8794000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
+              "duration": 3000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user click on login icon",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click on signin",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_signin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters username \"manager12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager12\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enters password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click on siginButton",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user is on mainpage",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
+            },
+            "keyword": "When "
           }
         ]
       },
       {
+        "start_timestamp": "2020-11-15T02:11:58.106Z",
+        "line": 23,
+        "name": "US_008 Password segment on Homepage should be editable",
+        "description": "",
+        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user Fill current password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user Fill New password with credentials \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user Fill confirmation New password with credentials \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "verify the password strength",
+            "match": {
+              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user click on save button",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login page should accessible with valid credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 287000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user click on login icon",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click on signin",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_signin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters username \"manager12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager12\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enters password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click on siginButton",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user is on mainpage",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T02:12:06.988Z",
+        "line": 24,
+        "name": "US_008 Password segment on Homepage should be editable",
+        "description": "",
+        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user Fill current password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user Fill New password with credentials \"MANAGEr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MANAGEr\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user Fill confirmation New password with credentials \"MANAGEr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MANAGEr\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "verify the password strength",
+            "match": {
+              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user click on save button",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login page should accessible with valid credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 219000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user click on login icon",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click on signin",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_signin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters username \"manager12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager12\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enters password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click on siginButton",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user is on mainpage",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T02:12:07.286Z",
+        "line": 25,
+        "name": "US_008 Password segment on Homepage should be editable",
+        "description": "",
+        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user Fill current password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user Fill New password with credentials \"Manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user Fill confirmation New password with credentials \"Manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "verify the password strength",
+            "match": {
+              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user click on save button",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Login page should accessible with valid credentials",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 233000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user click on login icon",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click on signin",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_signin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters username \"manager12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager12\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enters password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click on siginButton",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user is on mainpage",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
+            },
+            "keyword": "When "
+>>>>>>> master
+          }
+        ]
+      },
+      {
+<<<<<<< HEAD
         "start_timestamp": "2020-11-14T16:30:51.654Z",
         "line": 10,
         "name": "",
@@ -41,11 +710,36 @@
             "name": "User enters an email which contains @ sign and .com extension",
             "match": {
               "location": "stepdefinitions.US002_TC4.userEntersAnEmailWhichContainsSignAndComExtension()"
+=======
+        "start_timestamp": "2020-11-15T02:12:07.518Z",
+        "line": 26,
+        "name": "US_008 Password segment on Homepage should be editable",
+        "description": "",
+        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user Fill current password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
+>>>>>>> master
             },
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 10078000000,
               "status": "passed"
             },
@@ -63,18 +757,79 @@
           },
           {
             "name": "@TC0013"
+=======
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user Fill New password with credentials \"Mngr1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mngr1\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user Fill confirmation New password with credentials \"Mngr1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mngr1\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "verify the password strength",
+            "match": {
+              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user click on save button",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
+            },
+            "keyword": "And "
+>>>>>>> master
           }
         ]
       },
       {
+<<<<<<< HEAD
         "line": 6,
         "name": "",
+=======
+        "line": 3,
+        "name": "Login page should accessible with valid credentials",
+>>>>>>> master
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 386000000,
               "status": "passed"
             },
@@ -84,10 +839,103 @@
               "location": "stepdefinitions.US002_TC2.userIsOnTheRegistrationPage()"
             },
             "keyword": "Given "
+=======
+              "duration": 236000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user click on login icon",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click on signin",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_signin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters username \"manager12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager12\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enters password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click on siginButton",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user is on mainpage",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
+            },
+            "keyword": "When "
+>>>>>>> master
           }
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2020-11-14T16:31:10.411Z",
         "line": 15,
         "name": "",
@@ -105,11 +953,36 @@
             "name": "User enters an email which doesn\u0027t  contain @ sign  and .com extension",
             "match": {
               "location": "stepdefinitions.US002_TC4.userEntersAnEmailWhichDoesnTContainSignAndComExtension()"
+=======
+        "start_timestamp": "2020-11-15T02:12:07.760Z",
+        "line": 27,
+        "name": "US_008 Password segment on Homepage should be editable",
+        "description": "",
+        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user Fill current password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
+>>>>>>> master
             },
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 96000000,
               "status": "passed"
             },
@@ -127,18 +1000,80 @@
           },
           {
             "name": "@TC0014"
+=======
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user Fill New password with credentials \"Mngr1!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mngr1!\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user Fill confirmation New password with credentials \"Mngr1!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mngr1!\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "verify the password strength",
+            "match": {
+              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user click on save button",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
+            },
+            "keyword": "And "
+>>>>>>> master
           }
         ]
       },
       {
+<<<<<<< HEAD
         "line": 6,
         "name": "",
+=======
+        "line": 3,
+        "name": "Login page should accessible with valid credentials",
+>>>>>>> master
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 372000000,
               "status": "passed"
             },
@@ -148,10 +1083,102 @@
               "location": "stepdefinitions.US002_TC2.userIsOnTheRegistrationPage()"
             },
             "keyword": "Given "
+=======
+              "duration": 239000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user click on login icon",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click on signin",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_signin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters username \"manager12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager12\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enters password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click on siginButton",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user is on mainpage",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
+            },
+            "keyword": "When "
+>>>>>>> master
           }
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2020-11-14T16:31:11.117Z",
         "line": 20,
         "name": "",
@@ -167,10 +1194,37 @@
             "line": 21,
             "name": "User enters an email which contains @ sign but doesn’t contain .com extension",
             "match": {},
+=======
+        "start_timestamp": "2020-11-15T02:12:08.004Z",
+        "line": 28,
+        "name": "US_008 Password segment on Homepage should be editable",
+        "description": "",
+        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user Fill current password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
+            },
+>>>>>>> master
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1000000,
               "status": "skipped"
             },
@@ -188,18 +1242,80 @@
           },
           {
             "name": "@TC0015"
+=======
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user Fill New password with credentials \"Manager12!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager12!\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user Fill confirmation New password with credentials \"Manager12!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager12!\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "verify the password strength",
+            "match": {
+              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user click on save button",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
+            },
+            "keyword": "And "
+>>>>>>> master
           }
         ]
       },
       {
+<<<<<<< HEAD
         "line": 6,
         "name": "",
+=======
+        "line": 3,
+        "name": "Login page should accessible with valid credentials",
+>>>>>>> master
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 294000000,
               "status": "passed"
             },
@@ -209,10 +1325,102 @@
               "location": "stepdefinitions.US002_TC2.userIsOnTheRegistrationPage()"
             },
             "keyword": "Given "
+=======
+              "duration": 239000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user click on login icon",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click on signin",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_signin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters username \"manager12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manager12\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enters password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click on siginButton",
+            "match": {
+              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user is on mainpage",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
+            },
+            "keyword": "When "
+>>>>>>> master
           }
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2020-11-14T16:31:11.512Z",
         "line": 25,
         "name": "",
@@ -230,11 +1438,36 @@
             "name": "User enters an email which doesn\u0027t contain @ sign, but contains .com extension",
             "match": {
               "location": "stepdefinitions.US002_TC4.userEntersAnEmailWhichDoesnTContainSignButContainsComExtension()"
+=======
+        "start_timestamp": "2020-11-15T02:12:08.252Z",
+        "line": 29,
+        "name": "US_008 Password segment on Homepage should be editable",
+        "description": "",
+        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user Fill current password \"Manager123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
+>>>>>>> master
             },
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 65000000,
               "status": "passed"
             },
@@ -252,10 +1485,66 @@
           },
           {
             "name": "@TC0016"
+=======
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user Fill New password with credentials \"Manager123!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123!\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user Fill confirmation New password with credentials \"Manager123!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manager123!\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "verify the password strength",
+            "match": {
+              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user click on save button",
+            "match": {
+              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
+            },
+            "keyword": "And "
+>>>>>>> master
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "GMIBank Registration Functionality",
     "description": "  As a user, I should not be able to register with invalid credentials.",
     "id": "gmibank-registration-functionality",
@@ -271,5 +1560,13 @@
         }
       }
     ]
+=======
+    "name": "Password segment on Homepage should be editable",
+    "description": "",
+    "id": "password-segment-on-homepage-should-be-editable",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/UiFeatures/Us08.feature",
+    "tags": []
+>>>>>>> master
   }
 ]
