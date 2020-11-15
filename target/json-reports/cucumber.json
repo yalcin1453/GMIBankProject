@@ -1,944 +1,200 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
         "line": 3,
-<<<<<<< HEAD
-        "name": "",
-=======
-        "name": "Login page should accessible with valid credentials",
->>>>>>> master
+        "name": "User goes my operations dropdown and clicks the \"manage accounts\"",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user navigates to GMI bank application",
-            "match": {},
-=======
-              "duration": 8794000000,
+              "duration": 23738000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "user is on homepage",
+            "name": "User go to the sign in page",
             "match": {
-              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+              "location": "stepdefinitions.US_14.user_go_to_the_sign_in_page()"
             },
->>>>>>> master
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
+              "duration": 2638000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "click on sign button",
-            "match": {},
-            "keyword": "And "
-=======
-              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
-              "duration": 3000000,
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "user click on login icon",
+            "name": "User type username and password than click on sign in button",
             "match": {
-              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+              "location": "stepdefinitions.US_14.user_type_username_and_password_than_click_on_sign_in_button()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 4015000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "user click on signin",
+            "name": "User click on \" My Operations \" dropdown menu",
             "match": {
-              "location": "stepdefinitions.TC001.user_click_on_signin()"
+              "arguments": [
+                {
+                  "val": "\" My Operations \"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on_dropdown_menu(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3092000000,
+              "status": "passed"
             },
             "line": 7,
-            "name": "user enters username \"manager12\"",
+            "name": "User click on \"Manage Accounts\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"manager12\"",
-                  "offset": 21
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
                 }
               ],
-              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "user enters password \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "user click on siginButton",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "user is on mainpage",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
-            },
-            "keyword": "When "
->>>>>>> master
-          }
-        ]
-      },
-      {
-<<<<<<< HEAD
-        "start_timestamp": "2020-11-12T06:05:33.859Z",
-        "line": 7,
-        "name": "Login with invalid username",
-        "description": "",
-        "id": "login-page-should-not-be-accessible-with-invalid-credentials;login-with-invalid-username",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "User cannot login with invalid username validating the error message",
-            "match": {},
-            "keyword": "Given "
-=======
-        "start_timestamp": "2020-11-15T02:11:58.106Z",
-        "line": 23,
-        "name": "US_008 Password segment on Homepage should be editable",
-        "description": "",
-        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "user Fill current password \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "user Fill New password with credentials \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "user Fill confirmation New password with credentials \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 53
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "verify the password strength",
-            "match": {
-              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "user click on save button",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
-        "line": 3,
-        "name": "Login page should accessible with valid credentials",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 287000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on homepage",
-            "match": {
-              "location": "stepdefinitions.TC001.user_is_on_homepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
-              "duration": 1000000,
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "user click on login icon",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user click on signin",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_signin()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user enters username \"manager12\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"manager12\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "user enters password \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "user click on siginButton",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "user is on mainpage",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-15T02:12:06.988Z",
-        "line": 24,
-        "name": "US_008 Password segment on Homepage should be editable",
-        "description": "",
-        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "user Fill current password \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "user Fill New password with credentials \"MANAGEr\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"MANAGEr\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "user Fill confirmation New password with credentials \"MANAGEr\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"MANAGEr\"",
-                  "offset": 53
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "verify the password strength",
-            "match": {
-              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "user click on save button",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "Login page should accessible with valid credentials",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 219000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on homepage",
-            "match": {
-              "location": "stepdefinitions.TC001.user_is_on_homepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
-              "duration": 1000000,
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "user click on login icon",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user click on signin",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_signin()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user enters username \"manager12\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"manager12\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "user enters password \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "user click on siginButton",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "user is on mainpage",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-15T02:12:07.286Z",
-        "line": 25,
-        "name": "US_008 Password segment on Homepage should be editable",
-        "description": "",
-        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "user Fill current password \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "user Fill New password with credentials \"Manager\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "user Fill confirmation New password with credentials \"Manager\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager\"",
-                  "offset": 53
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "verify the password strength",
-            "match": {
-              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "user click on save button",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
-            },
-            "keyword": "And "
->>>>>>> master
-          }
-        ]
-      },
-      {
-        "line": 3,
-<<<<<<< HEAD
-        "name": "",
-=======
-        "name": "Login page should accessible with valid credentials",
->>>>>>> master
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user navigates to GMI bank application",
-            "match": {},
-=======
-              "duration": 233000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on homepage",
-            "match": {
-              "location": "stepdefinitions.TC001.user_is_on_homepage()"
-            },
->>>>>>> master
-            "keyword": "Given "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "click on sign button",
-            "match": {},
-            "keyword": "And "
-=======
-              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
-              "duration": 1000000,
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "user click on login icon",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user click on signin",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_signin()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user enters username \"manager12\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"manager12\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "user enters password \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "user click on siginButton",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "user is on mainpage",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
-            },
-            "keyword": "When "
->>>>>>> master
-          }
-        ]
-      },
-      {
-<<<<<<< HEAD
-        "start_timestamp": "2020-11-12T06:05:34.163Z",
+        "start_timestamp": "2020-11-15T03:20:36.981Z",
         "line": 11,
-        "name": "Login with invalid password",
+        "name": "User can not typed earlier,in the past,at the time of creation an account",
         "description": "",
-        "id": "login-page-should-not-be-accessible-with-invalid-credentials;login-with-invalid-password",
+        "id": "user-can-manage-accounts;user-can-not-typed-earlier-in-the-past-at-the-time-of-creation-an-account",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.193)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027apple-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:8fd:cd3d:c619:6e13%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/dl/rf5qc1mj2jq...}, goog:chromeOptions: {debuggerAddress: localhost:63904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: aba4e1c2d81e772ad2fc448eb08a2854\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Create a new Account\u0027)]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.click(Unknown Source)\n\tat stepdefinitions.US_14.user_click_on(US_14.java:36)\n\tat ✽.User click on \"Manage Accounts\"(file:///Users/apple/IdeaProjects/MeetSizeProject/GMIBankProject/src/test/resources/uiFeatures/US_14.feature:12)\n",
+              "duration": 3892000000,
+              "status": "failed"
             },
             "line": 12,
-            "name": "User cannot login with invalid password validating the error message",
-            "match": {},
-=======
-        "start_timestamp": "2020-11-15T02:12:07.518Z",
-        "line": 26,
-        "name": "US_008 Password segment on Homepage should be editable",
-        "description": "",
-        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+            "name": "User click on \"Manage Accounts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User Click on \"+Create a new Account\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"+Create a new Account\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_Click_on(java.lang.String)"
+            },
+            "keyword": "When "
+          },
           {
             "result": {
               "status": "skipped"
             },
             "line": 14,
-            "name": "user Fill current password \"Manager123\"",
+            "name": "User Click on the Create Date textbox and type the time of account creation",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
+              "location": "stepdefinitions.US_14.user_Click_on_the_Create_Date_textbox_and_type_the_time_of_account_creation()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
               "status": "skipped"
             },
             "line": 15,
-            "name": "user Fill New password with credentials \"Mngr1\"",
+            "name": "User click on the Closed Date textbox and type the time later than the time of account creation",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Mngr1\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "user Fill confirmation New password with credentials \"Mngr1\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mngr1\"",
-                  "offset": 53
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "verify the password strength",
-            "match": {
-              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+              "location": "stepdefinitions.US_14.user_click_on_the_Closed_Date_textbox_and_type_the_time_later_than_the_time_of_account_creation()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_14"
           },
           {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "user click on save button",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
-            },
->>>>>>> master
-            "keyword": "And "
+            "name": "@TC_1"
           }
         ]
       },
       {
         "line": 3,
-<<<<<<< HEAD
-        "name": "",
-=======
-        "name": "Login page should accessible with valid credentials",
->>>>>>> master
+        "name": "User goes my operations dropdown and clicks the \"manage accounts\"",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.US_14\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\n\t... 33 more\nCaused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.193)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027apple-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:8fd:cd3d:c619:6e13%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/dl/rf5qc1mj2jq...}, goog:chromeOptions: {debuggerAddress: localhost:63904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: aba4e1c2d81e772ad2fc448eb08a2854\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\n\tat utilities.Driver.getDriver(Driver.java:58)\n\tat pages.Userstory14.\u003cinit\u003e(Userstory14.java:12)\n\tat stepdefinitions.US_14.\u003cinit\u003e(US_14.java:13)\n\t... 38 more\n",
+              "duration": 10000000,
+              "status": "failed"
             },
             "line": 4,
-            "name": "user navigates to GMI bank application",
-            "match": {},
-=======
-              "duration": 236000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on homepage",
+            "name": "User go to the sign in page",
             "match": {
-              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+              "location": "stepdefinitions.US_14.user_go_to_the_sign_in_page()"
             },
->>>>>>> master
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "click on sign button",
-            "match": {},
-            "keyword": "And "
-=======
-              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
               "duration": 1000000,
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 5,
-            "name": "user click on login icon",
+            "name": "User type username and password than click on sign in button",
             "match": {
-              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+              "location": "stepdefinitions.US_14.user_type_username_and_password_than_click_on_sign_in_button()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 6,
-            "name": "user click on signin",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_signin()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user enters username \"manager12\"",
+            "name": "User click on \" My Operations \" dropdown menu",
             "match": {
               "arguments": [
                 {
-                  "val": "\"manager12\"",
-                  "offset": 21
+                  "val": "\" My Operations \"",
+                  "offset": 14
                 }
               ],
-              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "user enters password \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "user click on siginButton",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
+              "location": "stepdefinitions.US_14.user_click_on_dropdown_menu(java.lang.String)"
             },
             "keyword": "And "
           },
@@ -947,299 +203,74 @@
               "duration": 1000000,
               "status": "skipped"
             },
-            "line": 10,
-            "name": "user is on mainpage",
+            "line": 7,
+            "name": "User click on \"Manage Accounts\"",
             "match": {
-              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
+              "arguments": [
+                {
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
             },
-            "keyword": "When "
->>>>>>> master
+            "keyword": "Then "
           }
         ]
       },
       {
-<<<<<<< HEAD
-        "start_timestamp": "2020-11-12T06:05:34.179Z",
-        "line": 15,
-        "name": "invalid username and password",
+        "start_timestamp": "2020-11-15T03:21:15.055Z",
+        "line": 17,
+        "name": "User can not typed earlier,in the past,at the time of creation an account",
         "description": "",
-        "id": "login-page-should-not-be-accessible-with-invalid-credentials;invalid-username-and-password",
+        "id": "user-can-manage-accounts;user-can-not-typed-earlier-in-the-past-at-the-time-of-creation-an-account",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
-            },
-            "line": 16,
-            "name": "User cannot login with invalid username and password validating the error message",
-            "match": {},
-=======
-        "start_timestamp": "2020-11-15T02:12:07.760Z",
-        "line": 27,
-        "name": "US_008 Password segment on Homepage should be editable",
-        "description": "",
-        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "user Fill current password \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
               "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "user Fill New password with credentials \"Mngr1!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mngr1!\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "user Fill confirmation New password with credentials \"Mngr1!\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mngr1!\"",
-                  "offset": 53
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "verify the password strength",
-            "match": {
-              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
               "status": "skipped"
             },
             "line": 18,
-            "name": "user click on save button",
+            "name": "User click on \"Manage Accounts\"",
             "match": {
-              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
+              "arguments": [
+                {
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
             },
->>>>>>> master
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "line": 3,
-<<<<<<< HEAD
-        "name": "",
-=======
-        "name": "Login page should accessible with valid credentials",
->>>>>>> master
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "user navigates to GMI bank application",
-            "match": {},
-=======
-              "duration": 239000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on homepage",
-            "match": {
-              "location": "stepdefinitions.TC001.user_is_on_homepage()"
-            },
->>>>>>> master
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "click on sign button",
-            "match": {},
-            "keyword": "And "
-=======
-              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "user click on login icon",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
               "status": "skipped"
-            },
-            "line": 6,
-            "name": "user click on signin",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_signin()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user enters username \"manager12\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"manager12\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "user enters password \"Manager123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager123\"",
-                  "offset": 21
-                }
-              ],
-              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "user click on siginButton",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "user is on mainpage",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
-            },
-            "keyword": "When "
->>>>>>> master
-          }
-        ]
-      },
-      {
-<<<<<<< HEAD
-        "start_timestamp": "2020-11-12T06:05:34.196Z",
-        "line": 18,
-        "name": "given an option to reset their password",
-        "description": "",
-        "id": "login-page-should-not-be-accessible-with-invalid-credentials;given-an-option-to-reset-their-password",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
             },
             "line": 19,
-            "name": "User with invalid credentials should be given an option to reset their password",
-            "match": {},
-=======
-        "start_timestamp": "2020-11-15T02:12:08.004Z",
-        "line": 28,
-        "name": "US_008 Password segment on Homepage should be editable",
-        "description": "",
-        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;7",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "user Fill current password \"Manager123\"",
+            "name": "User Click on \"+Create a new Account\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Manager123\"",
-                  "offset": 27
+                  "val": "\"+Create a new Account\"",
+                  "offset": 14
                 }
               ],
-              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
+              "location": "stepdefinitions.US_14.user_Click_on(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
-            "line": 15,
-            "name": "user Fill New password with credentials \"Manager12!\"",
+            "line": 20,
+            "name": "User click on the Create Date textbox and type the date earlier at the time of account creation",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager12!\"",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
+              "location": "stepdefinitions.US_14.user_click_on_the_Create_Date_textbox_and_type_the_date_earlier_at_the_time_of_account_creation()"
             },
             "keyword": "And "
           },
@@ -1248,92 +279,70 @@
               "duration": 1000000,
               "status": "skipped"
             },
-            "line": 16,
-            "name": "user Fill confirmation New password with credentials \"Manager12!\"",
+            "line": 21,
+            "name": "User click on the Closed Date textbox and type the time later than the time of account creation",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Manager12!\"",
-                  "offset": 53
-                }
-              ],
-              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "verify the password strength",
-            "match": {
-              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+              "location": "stepdefinitions.US_14.user_click_on_the_Closed_Date_textbox_and_type_the_time_later_than_the_time_of_account_creation()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_14"
           },
           {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "user click on save button",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
-            },
->>>>>>> master
-            "keyword": "And "
+            "name": "@TC_2"
           }
         ]
       },
       {
         "line": 3,
-<<<<<<< HEAD
-        "name": "",
-=======
-        "name": "Login page should accessible with valid credentials",
->>>>>>> master
+        "name": "User goes my operations dropdown and clicks the \"manage accounts\"",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.US_14\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\n\t... 33 more\nCaused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.193)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027apple-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:8fd:cd3d:c619:6e13%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/dl/rf5qc1mj2jq...}, goog:chromeOptions: {debuggerAddress: localhost:63904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: aba4e1c2d81e772ad2fc448eb08a2854\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\n\tat utilities.Driver.getDriver(Driver.java:58)\n\tat pages.Userstory14.\u003cinit\u003e(Userstory14.java:12)\n\tat stepdefinitions.US_14.\u003cinit\u003e(US_14.java:13)\n\t... 38 more\n",
+              "duration": 11000000,
+              "status": "failed"
             },
             "line": 4,
-            "name": "user navigates to GMI bank application",
-            "match": {},
-=======
-              "duration": 239000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is on homepage",
+            "name": "User go to the sign in page",
             "match": {
-              "location": "stepdefinitions.TC001.user_is_on_homepage()"
+              "location": "stepdefinitions.US_14.user_go_to_the_sign_in_page()"
             },
->>>>>>> master
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 5,
-            "name": "click on sign button",
-            "match": {},
-            "keyword": "And "
-=======
-              "error_message": "java.lang.NoSuchFieldError: loginIcon\r\n\tat stepdefinitions.TC001.user_click_on_login_icon(TC001.java:29)\r\n\tat ✽.user click on login icon(file:///C:/Users/fatih/IdeaProjects/com.GMIBankProject/src/test/resources/UiFeatures/Us08.feature:5)\r\n",
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "user click on login icon",
+            "name": "User type username and password than click on sign in button",
             "match": {
-              "location": "stepdefinitions.TC001.user_click_on_login_icon()"
+              "location": "stepdefinitions.US_14.user_type_username_and_password_than_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User click on \" My Operations \" dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\" My Operations \"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on_dropdown_menu(java.lang.String)"
             },
             "keyword": "And "
           },
@@ -1341,10 +350,62 @@
             "result": {
               "status": "skipped"
             },
-            "line": 6,
-            "name": "user click on signin",
+            "line": 7,
+            "name": "User click on \"Manage Accounts\"",
             "match": {
-              "location": "stepdefinitions.TC001.user_click_on_signin()"
+              "arguments": [
+                {
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T03:21:15.093Z",
+        "line": 24,
+        "name": "User writes the date as month,day,year,hour and minute",
+        "description": "",
+        "id": "user-can-manage-accounts;user-writes-the-date-as-month-day-year-hour-and-minute",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "User click on \"Manage Accounts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User Click on \"+Create a new Account\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"+Create a new Account\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_Click_on(java.lang.String)"
             },
             "keyword": "When "
           },
@@ -1352,16 +413,81 @@
             "result": {
               "status": "skipped"
             },
-            "line": 7,
-            "name": "user enters username \"manager12\"",
+            "line": 27,
+            "name": "Click on the Create Date textbox",
+            "match": {
+              "location": "stepdefinitions.US_14.click_on_the_Create_Date_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "type date as month,day,year,hour and minute",
+            "match": {
+              "location": "stepdefinitions.US_14.type_date_as_month_day_year_hour_and_minute()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_14"
+          },
+          {
+            "name": "@TC_3"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User goes my operations dropdown and clicks the \"manage accounts\"",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.US_14\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\n\t... 33 more\nCaused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.193)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027apple-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:8fd:cd3d:c619:6e13%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/dl/rf5qc1mj2jq...}, goog:chromeOptions: {debuggerAddress: localhost:63904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: aba4e1c2d81e772ad2fc448eb08a2854\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\n\tat utilities.Driver.getDriver(Driver.java:58)\n\tat pages.Userstory14.\u003cinit\u003e(Userstory14.java:12)\n\tat stepdefinitions.US_14.\u003cinit\u003e(US_14.java:13)\n\t... 38 more\n",
+              "duration": 11000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "User go to the sign in page",
+            "match": {
+              "location": "stepdefinitions.US_14.user_go_to_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User type username and password than click on sign in button",
+            "match": {
+              "location": "stepdefinitions.US_14.user_type_username_and_password_than_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User click on \" My Operations \" dropdown menu",
             "match": {
               "arguments": [
                 {
-                  "val": "\"manager12\"",
-                  "offset": 21
+                  "val": "\" My Operations \"",
+                  "offset": 14
                 }
               ],
-              "location": "stepdefinitions.TC001.user_enters_username(java.lang.String)"
+              "location": "stepdefinitions.US_14.user_click_on_dropdown_menu(java.lang.String)"
             },
             "keyword": "And "
           },
@@ -1370,84 +496,412 @@
               "duration": 1000000,
               "status": "skipped"
             },
-            "line": 8,
-            "name": "user enters password \"Manager123\"",
+            "line": 7,
+            "name": "User click on \"Manage Accounts\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Manager123\"",
-                  "offset": 21
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
                 }
               ],
-              "location": "stepdefinitions.TC001.user_enters_password(java.lang.String)"
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "user click on siginButton",
-            "match": {
-              "location": "stepdefinitions.TC001.user_click_on_siginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "user is on mainpage",
-            "match": {
-              "location": "stepdefinitions.Us_08.user_is_on_mainpage()"
-            },
-            "keyword": "When "
->>>>>>> master
+            "keyword": "Then "
           }
         ]
       },
       {
-<<<<<<< HEAD
-        "start_timestamp": "2020-11-12T06:05:34.213Z",
-        "line": 21,
-        "name": "given the option to navigate to registration page",
+        "start_timestamp": "2020-11-15T03:21:15.131Z",
+        "line": 30,
+        "name": "User writes the date as month,day,year,hour and minute",
         "description": "",
-        "id": "login-page-should-not-be-accessible-with-invalid-credentials;given-the-option-to-navigate-to-registration-page",
+        "id": "user-can-manage-accounts;user-writes-the-date-as-month-day-year-hour-and-minute",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 4000000,
+              "status": "skipped"
             },
-            "line": 22,
-            "name": "User should be given the option to navigate to registration page if they did not register yet",
-            "match": {},
-=======
-        "start_timestamp": "2020-11-15T02:12:08.252Z",
-        "line": 29,
-        "name": "US_008 Password segment on Homepage should be editable",
+            "line": 31,
+            "name": "User click on \"Manage Accounts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "User Click on \"+Create a new Account\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"+Create a new Account\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_Click_on(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "User writes the date as month,day,year",
+            "match": {
+              "location": "stepdefinitions.US_14.user_writes_the_date_as_month_day_year()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Click on the Create Date textbox",
+            "match": {
+              "location": "stepdefinitions.US_14.click_on_the_Create_Date_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "type date as month,day,year",
+            "match": {
+              "location": "stepdefinitions.US_14.type_date_as_month_day_year()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_14"
+          },
+          {
+            "name": "@TC_4"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User goes my operations dropdown and clicks the \"manage accounts\"",
         "description": "",
-        "id": "password-segment-on-homepage-should-be-editable;us-008-password-segment-on-homepage-should-be-editable;users-admin-user-customer-manager;8",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.US_14\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\n\t... 33 more\nCaused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.193)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027apple-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:8fd:cd3d:c619:6e13%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/dl/rf5qc1mj2jq...}, goog:chromeOptions: {debuggerAddress: localhost:63904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: aba4e1c2d81e772ad2fc448eb08a2854\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\n\tat utilities.Driver.getDriver(Driver.java:58)\n\tat pages.Userstory14.\u003cinit\u003e(Userstory14.java:12)\n\tat stepdefinitions.US_14.\u003cinit\u003e(US_14.java:13)\n\t... 38 more\n",
+              "duration": 10000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "User go to the sign in page",
+            "match": {
+              "location": "stepdefinitions.US_14.user_go_to_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 14,
-            "name": "user Fill current password \"Manager123\"",
+            "line": 5,
+            "name": "User type username and password than click on sign in button",
+            "match": {
+              "location": "stepdefinitions.US_14.user_type_username_and_password_than_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User click on \" My Operations \" dropdown menu",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Manager123\"",
-                  "offset": 27
+                  "val": "\" My Operations \"",
+                  "offset": 14
                 }
               ],
-              "location": "stepdefinitions.Us_08.user_Fill_current_password(java.lang.String)"
+              "location": "stepdefinitions.US_14.user_click_on_dropdown_menu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User click on \"Manage Accounts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T03:21:15.184Z",
+        "line": 38,
+        "name": "User can choose a user from the registration and it cannot be blank",
+        "description": "",
+        "id": "user-can-manage-accounts;user-can-choose-a-user-from-the-registration-and-it-cannot-be-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "User Click on \"Manage Customer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manage Customer\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_Click_on(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "Click on \"+Create a new Custumer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"+Create a new Custumer\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.US_14.click_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "Click on the \"SSN\" textbox and type a valid SSN number and Click on the Search button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SSN\"",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.US_14.click_on_the_textbox_and_type_a_valid_SSN_number_and_Click_on_the_Search_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "User textbox should not be blank",
+            "match": {
+              "location": "stepdefinitions.US_14.user_textbox_should_not_be_blank()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_14"
+          },
+          {
+            "name": "@TC_5"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User goes my operations dropdown and clicks the \"manage accounts\"",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.US_14\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\n\t... 33 more\nCaused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.193)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027apple-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:8fd:cd3d:c619:6e13%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/dl/rf5qc1mj2jq...}, goog:chromeOptions: {debuggerAddress: localhost:63904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: aba4e1c2d81e772ad2fc448eb08a2854\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\n\tat utilities.Driver.getDriver(Driver.java:58)\n\tat pages.Userstory14.\u003cinit\u003e(Userstory14.java:12)\n\tat stepdefinitions.US_14.\u003cinit\u003e(US_14.java:13)\n\t... 38 more\n",
+              "duration": 13000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "User go to the sign in page",
+            "match": {
+              "location": "stepdefinitions.US_14.user_go_to_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User type username and password than click on sign in button",
+            "match": {
+              "location": "stepdefinitions.US_14.user_type_username_and_password_than_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User click on \" My Operations \" dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\" My Operations \"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on_dropdown_menu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User click on \"Manage Accounts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T03:21:15.217Z",
+        "line": 45,
+        "name": "There user can choose an account created on manage accounts",
+        "description": "",
+        "id": "user-can-manage-accounts;there-user-can-choose-an-account-created-on-manage-accounts",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "User click on \"Manage Accounts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "Click an ID item to choose an account created on manage accounts",
+            "match": {
+              "location": "stepdefinitions.US_14.click_an_ID_item_to_choose_an_account_created_on_manage_accounts()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_14"
+          },
+          {
+            "name": "@TC_6"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User goes my operations dropdown and clicks the \"manage accounts\"",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.US_14\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:121)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:129)\n\t... 33 more\nCaused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d86.0.4240.193)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027apple-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:8fd:cd3d:c619:6e13%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.193, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/dl/rf5qc1mj2jq...}, goog:chromeOptions: {debuggerAddress: localhost:63904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: aba4e1c2d81e772ad2fc448eb08a2854\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\n\tat utilities.Driver.getDriver(Driver.java:58)\n\tat pages.Userstory14.\u003cinit\u003e(Userstory14.java:12)\n\tat stepdefinitions.US_14.\u003cinit\u003e(US_14.java:13)\n\t... 38 more\n",
+              "duration": 10000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "User go to the sign in page",
+            "match": {
+              "location": "stepdefinitions.US_14.user_go_to_the_sign_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User type username and password than click on sign in button",
+            "match": {
+              "location": "stepdefinitions.US_14.user_type_username_and_password_than_click_on_sign_in_button()"
             },
             "keyword": "When "
           },
@@ -1455,75 +909,137 @@
             "result": {
               "status": "skipped"
             },
-            "line": 15,
-            "name": "user Fill New password with credentials \"Manager123!\"",
+            "line": 6,
+            "name": "User click on \" My Operations \" dropdown menu",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Manager123!\"",
-                  "offset": 40
+                  "val": "\" My Operations \"",
+                  "offset": 14
                 }
               ],
-              "location": "stepdefinitions.Us_08.user_Fill_New_password_with_credentials(java.lang.String)"
+              "location": "stepdefinitions.US_14.user_click_on_dropdown_menu(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
-            "line": 16,
-            "name": "user Fill confirmation New password with credentials \"Manager123!\"",
+            "line": 7,
+            "name": "User click on \"Manage Accounts\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Manager123!\"",
-                  "offset": 53
+                  "val": "\"Manage Accounts\"",
+                  "offset": 14
                 }
               ],
-              "location": "stepdefinitions.Us_08.user_Fill_confirmation_New_password_with_credentials(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "verify the password strength",
-            "match": {
-              "location": "stepdefinitions.Us_08.verify_the_password_strength()"
+              "location": "stepdefinitions.US_14.user_click_on(java.lang.String)"
             },
             "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-15T03:21:15.253Z",
+        "line": 50,
+        "name": "User can select Zelle Enrolled optionally and save it",
+        "description": "",
+        "id": "user-can-manage-accounts;user-can-select-zelle-enrolled-optionally-and-save-it",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "User Click on \"Manage Customer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Manage Customer\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_Click_on(java.lang.String)"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "skipped"
             },
-            "line": 18,
-            "name": "user click on save button",
+            "line": 52,
+            "name": "User Click on \"+Create a new Custumer\"",
             "match": {
-              "location": "stepdefinitions.Us_08.user_click_on_save_button()"
+              "arguments": [
+                {
+                  "val": "\"+Create a new Custumer\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_Click_on(java.lang.String)"
             },
->>>>>>> master
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "User click on the \"SSN\" textbox and type a valid SSN number and Click on the Search button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SSN\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.US_14.user_click_on_the_textbox_and_type_a_valid_SSN_number_and_Click_on_the_Search_button(java.lang.String)"
+            },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "User click in Zelle Enrolled radio button ,click save button",
+            "match": {
+              "location": "stepdefinitions.US_14.user_click_in_Zelle_Enrolled_radio_button_click_save_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_14"
+          },
+          {
+            "name": "@TC_7"
           }
         ]
       }
     ],
-<<<<<<< HEAD
-    "name": "Login page should not be accessible with invalid credentials",
+    "name": "User can manage accounts",
     "description": "",
-    "id": "login-page-should-not-be-accessible-with-invalid-credentials",
+    "id": "user-can-manage-accounts",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/TC_005.feature",
-=======
-    "name": "Password segment on Homepage should be editable",
-    "description": "",
-    "id": "password-segment-on-homepage-should-be-editable",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/UiFeatures/Us08.feature",
->>>>>>> master
-    "tags": []
+    "uri": "file:src/test/resources/uiFeatures/US_14.feature",
+    "tags": [
+      {
+        "name": "@US_14",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
