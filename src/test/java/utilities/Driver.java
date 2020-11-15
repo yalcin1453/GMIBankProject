@@ -11,7 +11,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.*;
-import utilities.ConfigurationReader;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -240,6 +239,15 @@ public class Driver {
         select.selectByIndex(optionIndex);
         return select.getFirstSelectedOption();
     }
+
+    public static void selectDropDown(WebElement element, String string){
+        Select option =new Select(element);
+
+       option.selectByVisibleText(string);
+
+    }
+
+
     /**
      * Clicks on an element using JavaScript
      *
