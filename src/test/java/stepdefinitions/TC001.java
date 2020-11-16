@@ -9,6 +9,7 @@ import pages.LoginPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class TC001 {
@@ -72,8 +73,12 @@ public class TC001 {
     public void verify_cancel_button_displayed() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
         //WebDriverWait wait=new WebDriverWait(Driver.getDriver(),20);
-        //Assert.assertTrue(loginPage.cancelButton.isDisplayed());
-        Assert.assertTrue(loginPage.cancelButton.isEnabled());
+        Assert.assertTrue(Driver.isExist(loginPage.cancelButton));
+        loginPage.cancelButton.click();
+        Assert.assertFalse(Driver.isExist(loginPage.loginForm));
+
+
+
 
     }
 

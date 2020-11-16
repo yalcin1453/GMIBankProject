@@ -18,6 +18,9 @@ public class LoginPage {
     @FindBy(id = "account-menu")
     public WebElement loginIcon;
 
+    @FindBy(linkText = "Register")
+    public WebElement registerLink;
+
     @FindBy(xpath ="//span[contains(text(),'Sign in')]")
     public WebElement signInLink;
 
@@ -35,5 +38,10 @@ public class LoginPage {
 
     @FindBy(xpath="//button[@class='btn btn-secondary']")
     public WebElement cancelButton;
+
+    @FindBy(xpath="//div[@class='modal-content']")
+    public WebElement loginForm;
+
+
 
 }
