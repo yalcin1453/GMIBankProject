@@ -16,7 +16,7 @@ import java.util.Date;
 
 public class US_09StepDefinitions {
 
-    LoginPage loginPage = new LoginPage();
+
 
     US_09 us_09 = new US_09();
 
@@ -27,32 +27,32 @@ public class US_09StepDefinitions {
 
     @Given("Click on account sign button")
     public void click_on_account_sign_button() {
-        loginPage.loginIcon.click();
+        us_09.loginIcon.click();
     }
 
     @Given("Click on Sign in button")
     public void click_on_Sign_in_button() throws InterruptedException {
-        loginPage.signInLink.click();
+        us_09.signInLink.click();
         Thread.sleep(10);
     }
 
     @Given("Click on username textbox and enter username")
     public void click_on_username_textbox_and_enter_username() throws InterruptedException {
-        loginPage.usernameTextBox.sendKeys(" group8employee");
+        us_09.usernameTextBox.sendKeys(" group8employee");
         Thread.sleep(10);
     }
 
     @And("Click on password textbox and enter password and click signin button")
     public void clickOnPasswordTextboxAndEnterPasswordAndClickSigninButton() throws InterruptedException {
-        loginPage.passwordTextBox.sendKeys(" group8employee");
-        Thread.sleep(10);
-        loginPage.signInButton.click();
+        us_09.passwordTextBox.sendKeys(" group8employee");
+        us_09.signInButton.click();
     }
 
     @Given("Click on My Operations dropdown and Select Manage Customers")
     public void click_on_My_Operations_dropdown_and_Select_Manage_Customers() {
-        Select select = new Select(us_09.manageCustomerButton);
-        select.selectByVisibleText("Manage Customers");
+        System.out.println();
+        us_09.myOperationButton.click();
+        us_09.manageCustomerButton.click();
     }
 
     @Given("Click on Create a new Customer")

@@ -11,7 +11,29 @@ public class US_09 {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "//div[@class='dropdown-menu dropdown-menu-right show']")
+    @FindBy(id = "account-menu")
+    public WebElement loginIcon;
+
+    @FindBy(xpath ="//span[contains(text(),'Sign in')]")
+    public WebElement signInLink;
+
+    @FindBy(xpath = "//input[@id='username']")
+    public WebElement usernameTextBox;
+
+    @FindBy(xpath = "//input[@id='password']")
+    public WebElement passwordTextBox;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement signInButton;
+
+    @FindBy(xpath ="//a[@href='/logout']")
+    public WebElement signOut;
+
+    @FindBy(xpath="//button[@class='btn btn-secondary']")
+    public WebElement cancelButton;
+
+
+    @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[2]/nav[1]/div[1]/ul[1]/li[8]/a[1]/span[1]")
     public WebElement myOperationButton;
 
 
