@@ -94,10 +94,8 @@ public class RegistrationPage  {
     @FindBy(xpath = "//*[contains(text(),'Your confirmation password is required')]")
     public WebElement confirmationPasswordRequiredMessage;
 
-
     @FindBy(id = "register-submit")
     public WebElement registerButton;
-
 
     @FindBy(xpath ="//*[contains(text(),'Please check your email for confirmation')]")
     public WebElement successMessage;
