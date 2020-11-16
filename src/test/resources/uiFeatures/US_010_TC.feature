@@ -17,6 +17,7 @@ Feature: Address of customer can be created
     And Click on Phone Number textbox and enter phone number
     And Click on Zip Code textbox and enter zip code
 
+    @TC_01
     Scenario: TC001_Address as street and number should be provided  and cannot be left blank
     And Click on City textbox and enter name of city
     And Click on Ssn textbox and enter valid SSN number
@@ -30,6 +31,7 @@ Feature: Address of customer can be created
       Then verify displayed "This field is required" message under address textbox
 
 
+      @TC_02
     Scenario: TC002_City should be provided and cannot be left as blank
     And Click on Adress textbox and enter adress
     And Click on Ssn textbox and enter valid SSN number
@@ -44,7 +46,7 @@ Feature: Address of customer can be created
 
 
 
-
+  @TC_03
   Scenario: TC003_Country should be typed and cannot be blank
   And Click on Adress textbox and enter adress
   And Click on City textbox and enter name of city
@@ -59,7 +61,7 @@ Feature: Address of customer can be created
 
 
 
-
+  @TC_04
   Scenario: TC004_State should be provided as US state and cannot be blank
   And Click on Adress textbox and enter adress
   And Click on City textbox and enter name of city
