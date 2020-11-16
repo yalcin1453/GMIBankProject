@@ -20,47 +20,11 @@ public class US_09StepDefinitions {
 
     US_09 us_09 = new US_09();
 
-    @Given("user should be landing page")
-    public void user_should_be_landing_page() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("gmi_url"));
-    }
-
-    @Given("Click on account sign button")
-    public void click_on_account_sign_button() {
-
-        us_09.loginIcon.click();
-
-    }
-
-    @Given("Click on Sign in button")
-    public void click_on_Sign_in_button() throws InterruptedException {
-
-        us_09.signInLink.click();
-
-        Thread.sleep(10);
-    }
-
-    @Given("Click on username textbox and enter username")
-    public void click_on_username_textbox_and_enter_username() throws InterruptedException {
-
-        us_09.usernameTextBox.sendKeys(" group8employee");
-
-        Thread.sleep(10);
-    }
-
-    @And("Click on password textbox and enter password and click signin button")
-    public void clickOnPasswordTextboxAndEnterPasswordAndClickSigninButton() throws InterruptedException {
-
-        us_09.passwordTextBox.sendKeys(" group8employee");
-        us_09.signInButton.click();
-
-    }
 
     @Given("Click on My Operations dropdown and Select Manage Customers")
     public void click_on_My_Operations_dropdown_and_Select_Manage_Customers() {
 
-        System.out.println();
-        us_09.myOperationButton.click();
+        us_09.myOperations.click();
         us_09.manageCustomerButton.click();
 
     }
@@ -72,7 +36,7 @@ public class US_09StepDefinitions {
 
     @Given("Click on SSN textbox and enter valid SSN number")
     public void click_on_SSN_textbox_and_enter_valid_SSN_number() {
-        us_09.SSNtextbox.sendKeys("123-12-1239");
+        us_09.SSNtextbox.sendKeys("127-12-1239");
     }
 
     @Given("Click on First Name textbox and enter first name")
@@ -122,7 +86,7 @@ public class US_09StepDefinitions {
 
     @Given("Click on Ssn textbox and enter valid SSN number")
     public void click_on_Ssn_textbox_and_enter_valid_SSN_number() {
-        us_09.SsnTextBox.sendKeys("123-12-1239");
+        us_09.SsnTextBox.sendKeys("127-12-1239");
     }
 
     @Given("Click on Create Date textbox enter current date and time")
@@ -163,18 +127,21 @@ public class US_09StepDefinitions {
     }
 
     @Given("Click on Save button")
-    public void click_on_Save_button() {
+    public void click_on_Save_button() throws InterruptedException {
+        Thread.sleep(5000);
         us_09.saveButton.click();
     }
 
     @Given("Click on Create a new Customer button")
-    public void click_on_Create_a_new_Customer_button() {
+    public void click_on_Create_a_new_Customer_button() throws InterruptedException {
+        Thread.sleep(5000);
         us_09.createNewCustomerButton.click();
+        Thread.sleep(5000);
     }
 
     @Given("Click on SSN textbox and enter user SSN number")
     public void click_on_SSN_textbox_and_enter_user_SSN_number() {
-        us_09.SSNtextbox.sendKeys(" 123-12-1239");
+        us_09.SSNtextbox.sendKeys(" 126-12-1239");
     }
 
     @Given("Click on Search button")
