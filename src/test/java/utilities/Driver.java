@@ -320,4 +320,17 @@ public class Driver {
     }
 
 
+    //Existence of WebElement TEAM 12  :)
+    public static boolean isExist(WebElement element){
+        boolean b;
+        try{
+            b=(element.isDisplayed()||(!element.isDisplayed()));
+
+        }catch(Exception e){
+            b=false;
+        }
+        return b;
+    }
+
+
 }
