@@ -39,4 +39,9 @@ public class LoginPage {
     @FindBy(xpath="//button[@class='btn btn-secondary']")
     public WebElement cancelButton;
 
+    @FindBy(xpath="//div[@class='modal-content']")
+    public WebElement loginForm;
+
+
+
 }

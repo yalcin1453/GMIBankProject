@@ -73,7 +73,10 @@ public class TC001 {
         // Write code here that turns the phrase above into concrete actions
         //WebDriverWait wait=new WebDriverWait(Driver.getDriver(),20);
         //Assert.assertTrue(loginPage.cancelButton.isDisplayed());
+        Assert.assertTrue(loginPage.loginForm.isDisplayed());
         Assert.assertTrue(loginPage.cancelButton.isEnabled());
+        loginPage.cancelButton.click();
+        Assert.assertFalse(loginPage.loginForm.isDisplayed());
 
 
     }
