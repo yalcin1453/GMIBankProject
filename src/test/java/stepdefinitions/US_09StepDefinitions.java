@@ -27,26 +27,26 @@ public class US_09StepDefinitions {
 
     @Given("Click on account sign button")
     public void click_on_account_sign_button() {
-        loginPage.accountSignButton.click();
+        loginPage.loginIcon.click();
     }
 
     @Given("Click on Sign in button")
     public void click_on_Sign_in_button() throws InterruptedException {
-        loginPage.SignIn.click();
+        loginPage.signInLink.click();
         Thread.sleep(10);
     }
 
     @Given("Click on username textbox and enter username")
     public void click_on_username_textbox_and_enter_username() throws InterruptedException {
-        loginPage.username.sendKeys(" group8employee");
+        loginPage.usernameTextBox.sendKeys(" group8employee");
         Thread.sleep(10);
     }
 
     @And("Click on password textbox and enter password and click signin button")
     public void clickOnPasswordTextboxAndEnterPasswordAndClickSigninButton() throws InterruptedException {
-        loginPage.password.sendKeys(" group8employee");
+        loginPage.passwordTextBox.sendKeys(" group8employee");
         Thread.sleep(10);
-        loginPage.SignInButton.click();
+        loginPage.signInButton.click();
     }
 
     @Given("Click on My Operations dropdown and Select Manage Customers")
