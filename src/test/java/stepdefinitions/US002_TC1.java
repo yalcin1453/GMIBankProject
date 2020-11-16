@@ -22,7 +22,7 @@ public class US002_TC1 {
     RegistrationPage registrationPage=new RegistrationPage();
     Faker faker= new Faker();
 
-    /*
+
     @Given("User is on the login page")
     public void userIsOnTheLoginPage() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
@@ -30,12 +30,12 @@ public class US002_TC1 {
 
      @When("User click on user icon link")
      public void userClickOnUserIconLink() {
-       loginPage.userIcon.click();
+       loginPage.loginIcon.click();
     }
 
     @Then("User click on register link")
     public void userClickOnRegisterLink() {
-    loginPage.register.click();
+    loginPage.registerLink.click();
     }
 
    @And("Registration page is opened")
@@ -105,7 +105,6 @@ public class US002_TC1 {
         Assert.assertTrue(ew.getText().contains("Please check your email for confirmation"));
     }
 
-*/
 
     @Given("user is on the registration page")
     public void userIsOnTheRegistrationPage() {
