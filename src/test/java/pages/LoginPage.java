@@ -18,6 +18,9 @@ public class LoginPage {
     @FindBy(id = "account-menu")
     public WebElement loginIcon;
 
+    @FindBy(linkText = "Register")
+    public WebElement registerLink;
+
     @FindBy(xpath ="//span[contains(text(),'Sign in')]")
     public WebElement signInLink;
 
