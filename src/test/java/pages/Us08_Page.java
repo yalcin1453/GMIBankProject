@@ -8,7 +8,7 @@ import utilities.Driver;
 public class Us08_Page {
     public Us08_Page(){PageFactory.initElements(Driver.getDriver(),this);}
 
-    @FindBy(xpath = "//span[contains(text(),'Fyalcin yalcin')]")
+    @FindBy(xpath = "//span[contains(text(),'Admin3 TechAdmin3')]")
     public WebElement userTab;
 
     @FindBy(xpath = "//span[contains(text(),'Password')]")
@@ -39,6 +39,10 @@ public class Us08_Page {
 
     @FindBy(xpath = "//span[contains(text(),'Save')]")
     public  WebElement saveButton;
+
+    @FindBy(xpath = "//span[contains(text(),'Sign out')]")
+    public  WebElement Signoutbutton;
+
 
 }
 
