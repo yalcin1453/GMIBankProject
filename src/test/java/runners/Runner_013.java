@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;@RunWith(Cucumber.class)
         },
         features ="src/test/resources/uiFeatures/Us_013.feature",
         glue = "stepdefinitions",
+        tags = "@Create",
         dryRun = false
 )
 public class Runner_013 {

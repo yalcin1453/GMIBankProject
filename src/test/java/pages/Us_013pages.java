@@ -49,9 +49,15 @@ public class Us_013pages {
     @FindBy(id="save-entity")
     public WebElement saveButton;
 
+    @FindBy(xpath ="//div[@class='Toastify__toast-body']")
+    public WebElement toast;
+@FindBy(xpath = "(//div [@class='invalid-feedback'])[1]")
+    public WebElement feedbackDescription;
+    @FindBy(xpath = "(//div [@class='invalid-feedback'])[2]")
+    public WebElement feedbackBalance;
 
-
-
+    @FindBy(xpath = "(//div [@class='invalid-feedback'])[2]")
+    public WebElement NonNumericBalance;
 
 
 
