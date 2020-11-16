@@ -59,4 +59,7 @@ public class US002_TC3 {
     }
 
 
+    @Then("User should see the password level chart change")
+    public void userShouldSeeThePasswordLevelChartChange() {
+    }
 }
