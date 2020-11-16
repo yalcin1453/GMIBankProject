@@ -32,10 +32,14 @@ public class Us_014pages {
     @FindBy(xpath = "//*[(text()='Manage Customers')]")
     public WebElement manageCustomersButton;
 
-    @FindBy(xpath = "//*[(text()='Create a new Customer')]")
-    public WebElement createNewCustomer;
+    //@FindBy(xpath = "//*[(text()='Create a new Customer')]")
+    //public WebElement createNewCustomer;
 
-    @FindBy(id = "search-ssn")
+ @FindBy (id = "jh-create-entity")
+ public WebElement createNewCustomer;
+
+
+    @FindBy(xpath = "//input[@id='search-ssn']")
     public WebElement ssn;
 
     @FindBy(xpath = "(//button[@type='button'])[2]")
@@ -44,15 +48,21 @@ public class Us_014pages {
     @FindBy(id = "tp-customer-firstName")
     public WebElement firstName;
 
-    @FindBy(xpath = "(//*[.='9256'])[1]")
+    @FindBy(xpath = "//table[@class='table']//tbody//tr[1]//td[1]")
     public WebElement idNum;
 
-    @FindBy(xpath = "//dd[.='Elena']")
-    public WebElement fname;
+   @FindBy(xpath = "//*[.='Account']")
+   public WebElement accountInfo;
 
     @FindBy(id = "tp-customer-zelleEnrolled")
     public WebElement zelleradio;
 
     @FindBy(xpath = "//span[.='Save']")
     public WebElement save;
+
+    @FindBy(id = "tp-account-createDate")
+    public WebElement createDateBox;
+
+    @FindBy(id = "tp-account-closedDate")
+    public WebElement closeDateBox;
 }

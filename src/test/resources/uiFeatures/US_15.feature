@@ -1,13 +1,13 @@
 @US_15
   Feature: System should allow user to manage their account
-    Background:
+    Background:User should manage my accounts
       Given User  go to the sign in page
       When User  type username and password than click on sign in button
       And User  click on " My Operations " dropdown menu
       Then User  click on "My Accounts"
 
       @AllAccounts
-      Scenario: User should see all account types and balace populated
+      Scenario: User should see all account types and balance populated
         Given User see all account types
         Then User see balance populates
 

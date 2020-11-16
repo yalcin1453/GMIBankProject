@@ -16,6 +16,6 @@ public class Us_015pages {
     @FindBy(xpath = "(//*[.='View Transaction'])[1]")
     public WebElement viewTransc;
 
-    @FindBy(xpath = "alert alert-warning")
+    @FindBy(xpath = "//div[@class='alert alert-warning']")
     public WebElement mesaageTransctn;
 }
