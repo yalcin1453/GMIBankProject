@@ -4,7 +4,10 @@ Feature: Address of customer can be created
     Given user should be landing page
     And Click on account sign button
     And Click on Sign in button
+<<<<<<< HEAD
     And Click on username textbox and enter username
+=======
+>>>>>>> adil
     And Click on password textbox and enter password and click signin button
     And Click on My Operations dropdown and Select Manage Customers
     And Click on Create a new Customer

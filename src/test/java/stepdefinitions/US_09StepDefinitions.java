@@ -57,10 +57,13 @@ public class US_09StepDefinitions {
     }
 
     @Given("Click on My Operations dropdown and Select Manage Customers")
-    public void click_on_My_Operations_dropdown_and_Select_Manage_Customers() {
+    public void click_on_My_Operations_dropdown_and_Select_Manage_Customers() throws InterruptedException {
 
-        System.out.println();
+        System.out.println(Driver.getDriver().getTitle());
+        Thread.sleep(10);
         us_09.myOperationButton.click();
+
+        Thread.sleep(10);
         us_09.manageCustomerButton.click();
 
     }
