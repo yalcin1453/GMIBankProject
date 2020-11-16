@@ -8,9 +8,13 @@ import utilities.Driver;
 
 public class LoginPage {
 
+
     public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
+
+
 
     //@FindBy(id ="account-menu")
     //public WebElement loginIcon;
@@ -40,8 +44,6 @@ public class LoginPage {
     public WebElement cancelButton;
 
 
-    @FindBy(xpath="//div[@class='modal-content']")
-    public WebElement loginForm;
 
 
 

@@ -75,7 +75,7 @@ public class TC001 {
         //WebDriverWait wait=new WebDriverWait(Driver.getDriver(),20);
         Assert.assertTrue(Driver.isExist(loginPage.cancelButton));
         loginPage.cancelButton.click();
-        Assert.assertFalse(Driver.isExist(loginPage.loginForm));
+
 
 
 
