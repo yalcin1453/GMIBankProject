@@ -5,7 +5,7 @@ Feature: Address of customer can be created
     And Click on account sign button
     And Click on Sign in button
     And Click on username textbox and enter username
-    And Click on password textbox and enter password
+    And Click on password textbox and enter password and click signin button
     And Click on My Operations dropdown and Select Manage Customers
     And Click on Create a new Customer
     And Click on SSN textbox and enter valid SSN number
