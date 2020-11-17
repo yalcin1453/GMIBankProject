@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import utilities.Driver;
 
 public class SignPageElements {
 
@@ -26,5 +28,9 @@ public class SignPageElements {
 
     @FindBy(xpath = "//strong[text()='Failed to sign in!']")
     public static WebElement failedToSignIn;
+
+    public SignPageElements(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
 
 }
