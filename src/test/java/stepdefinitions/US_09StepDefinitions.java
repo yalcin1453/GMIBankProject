@@ -23,12 +23,7 @@ public class US_09StepDefinitions {
 
     @Given("Click on My Operations dropdown and Select Manage Customers")
     public void click_on_My_Operations_dropdown_and_Select_Manage_Customers() throws InterruptedException {
-
-
         us_09.myOperations.click();
-
-
-
         us_09.manageCustomerButton.click();
 
     }
