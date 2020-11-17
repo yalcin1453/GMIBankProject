@@ -163,4 +163,42 @@ public class US_09StepDefinitions {
     }
 
 
+    @Then("verify displayed {string} message under address textbox")
+    public void verifyDisplayedMessageUnderAddressTextbox(String arg0) {
+        
+    }
+
+    @Then("verify displayed {string} message under city textbox")
+    public void verifyDisplayedMessageUnderCityTextbox(String arg0) {
+        
+    }
+
+    @And("Click on account sign button")
+    public void clickOnAccountSignButton() {
+        
+    }
+
+    @And("Click on Sign in button")
+    public void clickOnSignInButton() {
+        
+    }
+
+    @Given("user should be landing page")
+    public void userShouldBeLandingPage() {
+        
+    }
+
+    @And("Click on password textbox and enter password and click signin button")
+    public void clickOnPasswordTextboxAndEnterPasswordAndClickSigninButton() {
+        
+    }
+
+    @Then("verify displayed {string} message under country textbox")
+    public void verifyDisplayedMessageUnderCountryTextbox(String arg0) {
+        
+    }
+
+    @Then("verify displayed {string} message under state textbox")
+    public void verifyDisplayedMessageUnderStateTextbox(String arg0) {
+    }
 }
