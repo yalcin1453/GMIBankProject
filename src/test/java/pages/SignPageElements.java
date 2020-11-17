@@ -31,8 +31,5 @@ public SignPageElements(){
     @FindBy(xpath = "//strong[contains(text(),'Failed to sign in!')]")
     public WebElement failedToSignIn;
 
-    public SignPageElements(){
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
 
 }
