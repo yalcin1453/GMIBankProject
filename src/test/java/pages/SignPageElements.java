@@ -3,9 +3,13 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import utilities.Driver;
 
 public class SignPageElements {
-
+public SignPageElements(){
+    PageFactory.initElements(Driver.getDriver(),this);
+}
     @FindBy(xpath = "//input[@name='username']")
     public static WebElement username;
 
@@ -24,7 +28,8 @@ public class SignPageElements {
     @FindBy(xpath = "//button[@type='submit']")
     public static WebElement signInButton;
 
-    @FindBy(xpath = "//strong[text()='Failed to sign in!']")
-    public static WebElement failedToSignIn;
+    @FindBy(xpath = "//strong[contains(text(),'Failed to sign in!')]")
+    public WebElement failedToSignIn;
+
 
 }
