@@ -1,11 +1,12 @@
 Feature: Create a new customer
 
   Scenario:TC_001 User can search for a new applicant by their SSN and see all their registration info populated
-    Given user should be landing page
-    And Click on account sign button
-    And Click on Sign in button
-    And Click on username textbox and enter username
-    And Click on password textbox and enter password and click signin button
+    Given user is on homepage
+    And user click on login icon
+    When user click on signin
+    And user enters username "group8employee"
+    And user enters password "group8employee"
+    And user click on siginButton
     And Click on My Operations dropdown and Select Manage Customers
     And Click on Create a new Customer
     And Click on SSN textbox and enter valid SSN number

@@ -1,5 +1,6 @@
 package runners;
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -11,12 +12,12 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features ="src/test/resources/uiFeatures/US_14.feature",
+        features ="src/test/resources/uiFeatures/TC_005.feature",
         glue = "stepdefinitions",
+        tags = "@TC_005",
         dryRun = false
 
-
-//Mrs. kubra's workspace
 )
-public class Runner_014 {
+
+public class Runner_005 {
 }
