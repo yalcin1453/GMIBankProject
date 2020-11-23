@@ -2,15 +2,17 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class LoginPage {
 
 
-   public LoginPage(){
-    PageFactory.initElements(Driver.getDriver(),this);
-  }
+    public LoginPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+
 
 
 
@@ -40,6 +42,7 @@ public class LoginPage {
 
     @FindBy(xpath="//button[@class='btn btn-secondary']")
     public WebElement cancelButton;
+
 
 
 

@@ -31,16 +31,12 @@ public class US_09 {
 
     @FindBy(xpath="//button[@class='btn btn-secondary']")
     public WebElement cancelButton;
-
-
-    @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[2]/nav[1]/div[1]/ul[1]/li[8]/a[1]/span[1]")
-    public WebElement myOperationButton;
-
-
+    @FindBy(linkText = "My Operations")
+    public WebElement myOperations;
     @FindBy(xpath = "//a[@class='dropdown-item']")
     public WebElement manageCustomerButton;
 
-    @FindBy(xpath = "//a[@id='jh-create-entity']")
+    @FindBy(linkText = "Create a new Customer")
     public WebElement createNewCustomerButton;
 
     @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h2[1]/span[1]")
@@ -103,7 +99,7 @@ public class US_09 {
     @FindBy(xpath = "//a[@id='cancel-save']")
     public WebElement backButton;
 
-    @FindBy(xpath = "//button[@id='save-entity']")
+    @FindBy(linkText = "Save")
     public WebElement saveButton;
 
 }
