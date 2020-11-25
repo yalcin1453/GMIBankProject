@@ -4,7 +4,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.US_010;
 
-public class US_10 {
+public class CustomerAddressInfoStepDef {
 
     US_010 us_010 = new US_010();
 
