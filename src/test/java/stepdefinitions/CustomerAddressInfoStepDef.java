@@ -2,11 +2,12 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import pages.US_010;
+import pages.CustomerAddressInfoPage;
+
 
 public class CustomerAddressInfoStepDef {
 
-    US_010 us_010 = new US_010();
+    CustomerAddressInfoPage us_010 = new CustomerAddressInfoPage();
 
     @Then("verify displayed {string} message under address textbox")
     public void verify_displayed_message_under_address_textbox(String string) {

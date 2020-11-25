@@ -9,6 +9,7 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import utilities.ConfigurationReader;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -66,6 +67,8 @@ public class US021_CountryApiStepDefinition {
     @Then("user validates the data one by one")
     public void userValidatesTheDataOneByOne() {
 
+//        HashMap<String, Object> map = response.as(HashMap.class);
+//        System.out.println(map);
 
     }
 }

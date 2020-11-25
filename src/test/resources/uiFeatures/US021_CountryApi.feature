@@ -6,7 +6,7 @@ Feature: System should allow to read all countries info using api end point
 
 
   @TC_001
-  Scenario: Read all countries you created and validate them from your data set
+  Scenario : Read all countries you created and validate them from your data set
     Then user validates the data
 
     @TC_002
