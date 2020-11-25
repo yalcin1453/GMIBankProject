@@ -33,12 +33,10 @@ public class Registration_TC4StepDef {
         registrationPage.emailInput.sendKeys(" johngmail"+ Keys.ENTER);
     }
 
-
     //@When("User enters an email which contains @ sign but doesn’t contain .com extension")
     //public void userEntersAnEmailWhichContainsSignButDoesnTContainComExtension() {
       //  registrationPage.emailInput.sendKeys("john@gmail.dflkjgfdhkljndkbndxlkhmnx"+Keys.ENTER);
-   // }
-
+    //}
 
     @When("User enters an email which doesn't contain @ sign, but contains .com extension")
     public void userEntersAnEmailWhichDoesnTContainSignButContainsComExtension() {
