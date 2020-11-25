@@ -66,12 +66,6 @@ public class US021_CountryApiStepDefinition {
 
     }
 
-    @Then("user validates the data one by one for countries")
-    public void userValidatesTheDataOneByOne() {
-
-        HashMap<String, Object> map = response.as(HashMap.class);
-        System.out.println(map);
 
 
-    }
 }
