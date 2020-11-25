@@ -9,6 +9,7 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import utilities.ConfigurationReader;
 
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,6 +20,7 @@ public class US021_CountryApiStepDefinition {
     Response response;
     JsonPath json;
     List<Map<String, Object>> allCountryData;
+
 
     @Given("user gets all data for countries using api end point {string}")
     public void user_gets_all_data_for_countries_using_api_en_point(String url) {
@@ -51,7 +53,7 @@ public class US021_CountryApiStepDefinition {
         System.out.println(lastCountryName);
 
     }
-    @Then("user validates the data")
+    @Then("user validates the data for countries")
     public void user_validates_the_data() {
 
         String expectedCountryName="Sudan";
@@ -64,11 +66,12 @@ public class US021_CountryApiStepDefinition {
 
     }
 
-    @Then("user validates the data one by one")
+    @Then("user validates the data one by one for countries")
     public void userValidatesTheDataOneByOne() {
 
-//        HashMap<String, Object> map = response.as(HashMap.class);
-//        System.out.println(map);
+        HashMap<String, Object> map = response.as(HashMap.class);
+        System.out.println(map);
+
 
     }
 }
