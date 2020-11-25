@@ -4,15 +4,15 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
-import pages.Us_013pages;
+import pages.CreateAccountPage;
 import utilities.Driver;
 
-public class Us_013 {
+public class CreateAccountStepDef {
 
 
 
 
-  Us_013pages us_013= new Us_013pages();
+  CreateAccountPage us_013= new CreateAccountPage();
 
 
 

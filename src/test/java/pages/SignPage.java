@@ -6,8 +6,8 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class SignPageElements {
-public SignPageElements(){
+public class SignPage {
+public SignPage(){
     PageFactory.initElements(Driver.getDriver(),this);
 }
     @FindBy(xpath = "//input[@name='username']")

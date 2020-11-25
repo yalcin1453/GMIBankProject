@@ -7,9 +7,9 @@ import utilities.Driver;
 
 import java.util.List;
 
-public class US_06_Page {
+public class UserInfoPage {
 
-    public US_06_Page(){
+    public UserInfoPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

@@ -16,7 +16,7 @@ import utilities.Driver;
 
 import java.util.Random;
 
-public class US002_TC1 {
+public class Registration_TC1StepDef {
 
     LoginPage loginPage= new LoginPage();
     RegistrationPage registrationPage=new RegistrationPage();

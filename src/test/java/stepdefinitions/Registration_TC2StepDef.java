@@ -9,7 +9,7 @@ import org.openqa.selenium.Keys;
 import pages.RegistrationPage;
 import utilities.Driver;
 
-public class US002_TC2 {
+public class Registration_TC2StepDef {
     RegistrationPage registrationPage=new RegistrationPage();
 
     @Given("User is on the registration page")

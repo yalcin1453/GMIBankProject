@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class Us_12pages {
+public class ManageCustomerPage {
 
-    public Us_12pages(){
+    public ManageCustomerPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "//input[@name='middleInitial']")

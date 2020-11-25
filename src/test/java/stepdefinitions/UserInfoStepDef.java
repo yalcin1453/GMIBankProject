@@ -9,14 +9,14 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-import pages.US_06_Page;
+import pages.UserInfoPage;
 import utilities.Driver;
 
 
 
-public class US_06_Step_Definitions {
+public class UserInfoStepDef {
 
-    US_06_Page us06Page = new US_06_Page();
+    UserInfoPage us06Page = new UserInfoPage();
 
   //  WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 

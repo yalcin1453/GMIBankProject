@@ -6,18 +6,16 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-import pages.Us_014pages;
-import pages.Us_015pages;
+import pages.DateCreationPage;
+import pages.ViewtransectionsPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
 import java.util.List;
 
-public class US_15 {
-    Us_015pages object=new Us_015pages();
-    Us_014pages objectUs14=new Us_014pages();
+public class ViewtransectionsStepDef {
+    ViewtransectionsPage object=new ViewtransectionsPage();
+    DateCreationPage objectUs14=new DateCreationPage();
 
     //TC_001
 

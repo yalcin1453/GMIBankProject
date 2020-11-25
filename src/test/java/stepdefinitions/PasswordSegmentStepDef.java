@@ -3,15 +3,14 @@ package stepdefinitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.support.ui.Select;
 import pages.LoginPage;
-import pages.Us08_Page;
+import pages.PasswordSegmentPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class Us_08 {
+public class PasswordSegmentStepDef {
     LoginPage loginPage=new LoginPage();
-    Us08_Page us08_page = new Us08_Page();
+    PasswordSegmentPage us08_page = new PasswordSegmentPage();
 
     @When("user login with valid credentials")
     public void user_login_with_valid_credentials() {

@@ -2,19 +2,16 @@ package stepdefinitions;
 
 import io.cucumber.java.en.*;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
-import pages.US_001;
+import pages.NewRegistriationPage;
 import utilities.Constants;
 import utilities.Driver;
 
-import java.util.concurrent.TimeUnit;
-
-public class TC_001 {
+public class NewRegistriationStepDef {
     /**
      * @author Orhan Demirci
      * US_001
      */
-    US_001 user = new US_001();
+    NewRegistriationPage user = new NewRegistriationPage();
 
     @Given("^User is on the GMI bank page$")
     public void navigateToGMIWebsite() {

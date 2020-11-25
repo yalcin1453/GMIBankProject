@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class Us_013pages {
+public class CreateAccountPage {
 
-    public Us_013pages(){
+    public CreateAccountPage(){
 
         PageFactory.initElements(Driver.getDriver(),this);
 

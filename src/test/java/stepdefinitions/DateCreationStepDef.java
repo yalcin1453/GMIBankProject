@@ -4,12 +4,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
-import pages.Us_014pages;
+import pages.DateCreationPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class US_014 {
-    Us_014pages object=new Us_014pages();
+public class DateCreationStepDef {
+    DateCreationPage object=new DateCreationPage();
 
     //Background
     @Given("Go to the sign in page")

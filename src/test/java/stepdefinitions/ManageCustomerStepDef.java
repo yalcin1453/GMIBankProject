@@ -3,12 +3,11 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.support.ui.Select;
-import pages.Us_12pages;
-import utilities.ConfigurationReader;
+import pages.ManageCustomerPage;
 import utilities.Driver;
 
-public class Us_12 {
-       Us_12pages us_12= new Us_12pages();
+public class ManageCustomerStepDef {
+       ManageCustomerPage us_12= new ManageCustomerPage();
 
     @Given("user at customer create page")
     public void user_at_customer_create_page() {

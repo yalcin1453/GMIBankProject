@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class Us08_Page {
-    public Us08_Page(){PageFactory.initElements(Driver.getDriver(),this);}
+public class PasswordSegmentPage {
+    public PasswordSegmentPage(){PageFactory.initElements(Driver.getDriver(),this);}
 
     @FindBy(xpath = "//span[contains(text(),'Admin3 TechAdmin3')]")
     public WebElement userTab;

@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class Us_015pages {
-    public Us_015pages(){
+public class ViewtransectionsPage {
+    public ViewtransectionsPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

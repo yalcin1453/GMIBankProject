@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;@RunWith(Cucumber.class)
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features ="src/test/resources/uiFeatures/TC_005.feature",
+        features ="src/test/resources/uiFeatures/InvalidLogin.feature",
         tags = "@TC_005",
         glue = "stepdefinitions",
 

@@ -5,20 +5,17 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
-import pages.LoginPage;
-import pages.US_09;
-import utilities.ConfigurationReader;
-import utilities.Driver;
+import pages.CreateCustomerPage;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class US_09StepDefinitions {
+public class CreateCustomerStepDef {
 
 
 
-    US_09 us_09 = new US_09();
+    CreateCustomerPage us_09 = new CreateCustomerPage();
 
 
     @Given("Click on My Operations dropdown and Select Manage Customers")

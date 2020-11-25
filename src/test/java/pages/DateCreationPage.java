@@ -6,9 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import utilities.Driver;
 
-public class Us_014pages {
+public class DateCreationPage {
 
-    public Us_014pages(){
+    public DateCreationPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "(//*[.='My Operations'])[1]")

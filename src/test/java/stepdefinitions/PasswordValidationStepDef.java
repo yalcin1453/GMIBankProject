@@ -5,7 +5,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.RegistrationPage;
 
-public class US003 {
+public class PasswordValidationStepDef {
 
     RegistrationPage registrationPage=new RegistrationPage();
 

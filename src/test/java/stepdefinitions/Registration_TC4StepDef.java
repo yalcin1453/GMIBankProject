@@ -7,7 +7,7 @@ import org.junit.Ignore;
 import org.openqa.selenium.Keys;
 import pages.RegistrationPage;
 
-public class US002_TC4 {
+public class Registration_TC4StepDef {
 
     RegistrationPage registrationPage=new RegistrationPage();
 

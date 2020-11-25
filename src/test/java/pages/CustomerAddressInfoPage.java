@@ -5,10 +5,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class US_010 {
+public class CustomerAddressInfoPage {
 
 
-    public US_010(){
+    public CustomerAddressInfoPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

@@ -8,7 +8,7 @@ import org.openqa.selenium.Keys;
 import pages.RegistrationPage;
 import utilities.Driver;
 
-public class US002_TC3 {
+public class Registration_TC3StepDef {
 
     RegistrationPage registrationPage=new RegistrationPage();
 

@@ -12,7 +12,7 @@ import utilities.Driver;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-public class TC001 {
+public class LoginStepDef {
 
     LoginPage loginPage=new LoginPage();
 

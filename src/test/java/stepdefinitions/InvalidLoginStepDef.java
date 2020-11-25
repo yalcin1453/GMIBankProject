@@ -1,17 +1,13 @@
 package stepdefinitions;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
-import pages.LoginPage;
-import pages.SignPageElements;
-import utilities.ConfigurationReader;
+import pages.SignPage;
 import utilities.Driver;
 
-public class TC_005 {
+public class InvalidLoginStepDef {
 
-SignPageElements signPageElements=new SignPageElements();
+SignPage signPageElements=new SignPage();
 
     @Then("verify user can't logged in with invalid credentials")
     public void verify_user_can_t_loged_in_with_invalid_crdentials() throws InterruptedException {

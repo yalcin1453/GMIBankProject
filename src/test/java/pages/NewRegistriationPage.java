@@ -7,11 +7,11 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class US_001 {
+public class NewRegistriationPage {
     /**
      * @author Orhan Demirci
      */
-    public US_001() {
+    public NewRegistriationPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
