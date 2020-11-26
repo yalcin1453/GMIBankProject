@@ -39,7 +39,7 @@ public class US021_CountryApiStepDefinition {
     @Given("user deserializes country data as json to java pojo")
     public void user_deserializes_country_data_as_json_to_java_pojo() {
         allCountryData = json.getList("$");
-     //   System.out.println("list of countries :" + allCountryData);
+        System.out.println("list of countries :" + allCountryData);
 
         String fifthCountryName = allCountryData.get(4).get("name").toString();
         System.out.println("the name of the fifth country:" + fifthCountryName);
@@ -56,12 +56,12 @@ public class US021_CountryApiStepDefinition {
     @Then("user validates the data for countries")
     public void user_validates_the_data() {
 
-        String expectedCountryName="Sudan";
-        String actualCountryName= allCountryData.get(70).get("name").toString();
+        String expectedCountryName="UNITED KINGDOM";
+        String actualCountryName= allCountryData.get(2).get("name").toString();
         Assert.assertEquals(expectedCountryName,actualCountryName);
 
         int expectedCountryId=1751;
-        int actualCountryId=(int) allCountryData.get(5).get("id");
+        int actualCountryId=(int) allCountryData.get(3).get("id");
         Assert.assertEquals(expectedCountryId,actualCountryId);
 
     }
