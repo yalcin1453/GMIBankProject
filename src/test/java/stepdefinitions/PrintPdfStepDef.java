@@ -5,10 +5,8 @@ import Pojos.Customer;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import utilities.DatabaseUtility;
 import utilities.PDFGenerator;
-import utilities.ReadTxt;
 
 import java.util.ArrayList;
 import java.util.List;
