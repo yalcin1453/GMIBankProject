@@ -1,10 +1,5 @@
 package jsonModels;
 
-import utilities.ReadTxt;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class stateJson {
 
     final public static  String CREATE_STATE1 = "{\"countryId\": 1,\"name\": Vermont\"}";

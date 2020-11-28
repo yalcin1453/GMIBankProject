@@ -2,25 +2,19 @@ package stepdefinitions;
 
 
 import Pojos.AccountRegistration;
-import Pojos.Customer;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.*;
 import org.junit.Assert;
 import utilities.ConfigurationReader;
-import utilities.ReadTxt;
-import utilities.WriteToTxt;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.registerParser;
 
 public class ApplicantDataValidationStepDef {
 

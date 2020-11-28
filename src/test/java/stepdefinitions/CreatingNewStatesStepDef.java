@@ -1,27 +1,17 @@
 package stepdefinitions;
 
-import Pojos.AccountRegistration;
 import Pojos.States;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.util.JSONPObject;
-import org.json.JSONObject;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import jsonModels.stateJson;
-import org.hamcrest.Matchers;
 import org.junit.Assert;
 import utilities.ConfigurationReader;
-import utilities.ReadTxt;
-import utilities.WriteToTxt;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;

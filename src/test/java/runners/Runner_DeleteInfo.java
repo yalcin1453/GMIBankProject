@@ -11,12 +11,12 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features ="src/test/resources/uiFeatures/DateCreation.feature",
+        features ="src/test/resources/uiFeatures/DeleteInfo.feature",
         glue = "stepdefinitions",
+        tags = "@US_27",
         dryRun = false
-
-
-
 )
-public class Runner_014 {
+public class Runner_DeleteInfo {
+
+
 }

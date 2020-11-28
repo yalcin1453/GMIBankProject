@@ -51,7 +51,7 @@ public class PDFGenerator {
         Document document = new Document();
         String pdf_path =  fileName;
         String pdf_title = header;
-        String logo_path = "C:\\Users\\fatih\\Desktop\\unnamed.jpg";
+        //String logo_path = "C:\\Users\\fatih\\Desktop\\unnamed.jpg";
         List<String> headers = new ArrayList<String>();
         headers.add("Applicants");
         headers.add("SSNs");
@@ -97,7 +97,7 @@ public class PDFGenerator {
             table.addCell("Virginia");
             table.addCell("55123");
             document.add(table);
-            document.add(Image.getInstance(logo_path));
+            //document.add(Image.getInstance(logo_path));
             document.close();
             writer.close();
         }
@@ -109,7 +109,7 @@ public class PDFGenerator {
         Document document = new Document();
         String pdf_path = fileName;
         String pdf_title = header;
-        String logo_path = "C:\\Users\\fatih\\Desktop\\unnamed.jpg";
+       // String logo_path = "C:\\Users\\fatih\\Desktop\\unnamed.jpg";
         List<String> headers = new ArrayList<String>();
         headers.add("Applicants");
         headers.add("SSNs");
@@ -139,7 +139,7 @@ public class PDFGenerator {
                 table.addCell(list.get(i).getZipCode());
             }
             document.add(table);
-            document.add(Image.getInstance(logo_path));
+            //document.add(Image.getInstance(logo_path));
             document.close();
             writer.close();
         } catch (Exception e) {
@@ -151,7 +151,7 @@ public class PDFGenerator {
             Document document = new Document();
             String pdf_path = fileName;
             String pdf_title = header;
-            String logo_path = "C:\\Users\\fatih\\Desktop\\unnamed.jpg";
+            //String logo_path = "C:\\Users\\fatih\\Desktop\\unnamed.jpg";
             List<String> headers = new ArrayList<String>();
             headers.add("ID");
             headers.add("Name");
@@ -178,7 +178,7 @@ public class PDFGenerator {
 
                 }
                 document.add(table);
-                document.add(Image.getInstance(logo_path));
+               // document.add(Image.getInstance(logo_path));
                 document.close();
                 writer.close();
             }
