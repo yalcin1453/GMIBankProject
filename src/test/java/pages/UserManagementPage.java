@@ -13,6 +13,9 @@ public class UserManagementPage {
     @FindBy(xpath = "//div[@class='Toastify__toast-body']")
     public WebElement toastify;
 
+    @FindBy(xpath="//dd[1]//span[1]")
+    public WebElement userName;
+
     public UserManagementPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
