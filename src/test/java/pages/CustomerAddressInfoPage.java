@@ -75,4 +75,17 @@ public class CustomerAddressInfoPage {
     @FindBy(xpath = "//button[@id='save-entity']")
     public WebElement saveButton;
 
+    @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[9]/div[1]/div[1]")
+    public WebElement adressMessage;
+
+    @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[10]/div[1]/div[1]")
+    public WebElement cityMessage;
+
+    @FindBy(xpath = "//select[@id='tp-customer-country']")
+    public WebElement countryMessage;
+
+    @FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[14]/label[1]")
+    public WebElement stateMessage;
+
+
 }
