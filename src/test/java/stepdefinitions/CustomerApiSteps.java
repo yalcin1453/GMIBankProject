@@ -8,8 +8,6 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import pojos.Customer;
 import utilities.ConfigurationReader;
-import utilities.ReadTxt;
-import utilities.WriteToTxt;
 
 import java.io.IOException;
 import java.util.List;

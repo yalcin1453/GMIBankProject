@@ -3,21 +3,20 @@ package runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
-
-@RunWith(Cucumber.class)
+import org.junit.runner.RunWith;@RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
                 "html:target/default-cucumber-reports",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features ="src/test/resources/uiFeatures/TC_005.feature",
-        glue = "stepdefinitions",
+        features ="src/test/resources/uiFeatures/InvalidLogin.feature",
         tags = "@TC_005",
+        glue = "stepdefinitions",
+
         dryRun = false
-
 )
-
 public class Runner_005 {
+
+
 }

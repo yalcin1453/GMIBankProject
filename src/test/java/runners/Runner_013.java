@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;@RunWith(Cucumber.class)
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features ="src/test/resources/uiFeatures/Us_013.feature",
+        features ="src/test/resources/uiFeatures/CreateAccount.feature",
         glue = "stepdefinitions",
         dryRun = false
 )

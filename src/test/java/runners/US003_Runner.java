@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features ="src\\test\\resources\\UiFeatures\\US003.feature",
+        features ="src\\test\\resources\\UiFeatures\\PasswordValidation.feature",
         glue = "stepdefinitions",
         tags = "@US003",
         dryRun = false

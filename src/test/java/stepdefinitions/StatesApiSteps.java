@@ -9,8 +9,6 @@ import jsonModels.StateJson;
 import org.junit.Assert;
 import pojos.States;
 import utilities.ConfigurationReader;
-import utilities.ReadTxt;
-import utilities.WriteToTxt;
 
 import java.io.IOException;
 import java.util.List;
