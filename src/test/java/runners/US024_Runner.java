@@ -1,5 +1,6 @@
 package runners;
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -11,12 +12,11 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features ="src/test/resources/uiFeatures/DateCreation.feature",
+        features ="src\\test\\resources\\UiFeatures\\CreatingNewStatesAPI.feature",
         glue = "stepdefinitions",
+        tags = "@US024",
         dryRun = false
-
-
-
 )
-public class Runner_014 {
+
+public class US024_Runner {
 }

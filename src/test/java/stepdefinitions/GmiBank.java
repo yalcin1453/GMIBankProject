@@ -1,16 +1,11 @@
 package stepdefinitions;
 
 import Pojos.Customer;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import utilities.ConfigurationReader;
-import utilities.WriteToTxt;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 import static io.restassured.RestAssured.given;
 
