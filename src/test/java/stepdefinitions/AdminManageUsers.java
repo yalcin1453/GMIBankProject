@@ -49,9 +49,29 @@ public class AdminManageUsers {
 
     @Then("verify admin is on view page")
     public void verify_admin_is_on_view_page() {
-        Driver.waitForPageToLoad(30);
+        Driver.waitForVisibility(ump.userName,60);
         Assert.assertEquals(ump.userName.getText(),userName.toString());
+
     }
+
+    @Given("admin click on edit button {string}")
+    public void admin_click_on_edit_button(String string) {
+        WebElement userEditButton = Driver.getDriver().findElement(By.xpath("//tbody//tr//td[6]//*[contains(text(),'"+string+"')]//..//..//..//td[10]//a[2]"));
+        userEditButton.click();
+
+    }
+
+    @Given("Admin change all user info")
+    public void admin_change_all_user_info() {
+
+        ump.userEditLogin.sendKeys("e");
+        ump.userEditFirstName.sendKeys("e");
+        ump.userEditLastName.sendKeys("e");
+        userName=ump.userEditLogin.getAttribute("value");
+        ump.userEditSaveButton.click();
+
+    }
+
 
 
 }
