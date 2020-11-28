@@ -5,7 +5,14 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class User {
 
-
+    private int id;
+    private String  firstname;
+    private String  lastname;
+    private String  email;
+    private boolean activated;
+    private String  longKey;
+    private String  imageUrl;
+    private String  resetDate;
 
     public int getId() {
         return id;
@@ -71,13 +78,6 @@ public class User {
         this.resetDate = resetDate;
     }
 
-    private int id;
-    private String  firstname;
-    private String  lastname;
-    private String  email;
-    private boolean activated;
-    private String  longKey;
-    private String  imageUrl;
-    private String  resetDate;
+
 
 }

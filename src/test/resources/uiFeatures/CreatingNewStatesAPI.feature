@@ -12,7 +12,18 @@
     Scenario:Create new states if it is not created already
       Given User retrieves all created states
       And User puts the data in correspondent file
-      Then User creates a state if it is not in the file
+      Then User validates data for all states
+
+      @CreateState
+      Scenario: create a state
+        Given user creates a new state using "https://www.gmibank.com/api/tp-states"
+
+
+
+
+
+
+
 
 
 

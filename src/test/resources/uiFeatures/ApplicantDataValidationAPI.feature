@@ -6,7 +6,7 @@ Feature: Applicants' data validation
   Background: Api end point is being set in response
     Given user provides api end point and set the response using "https://www.gmibank.com/api/tp-account-registrations"
 
-    Scenario:Validate all applicants' information
+    Scenario:Read all applicants' information
       Given User manipulates all the applicants data
       And User sets the data in correspondent file
       Then User validates all the data
@@ -16,5 +16,10 @@ Feature: Applicants' data validation
 
   #  Read all countries you created and validate them from your data set
   #  Read all customers you created and validate them 1 by 1
+
+
+
+
+
 
 
