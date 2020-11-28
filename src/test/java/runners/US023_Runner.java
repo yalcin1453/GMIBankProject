@@ -12,12 +12,11 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
-        features ="src\\test\\resources\\UiFeatures\\Registration.feature",
+        features ="src\\test\\resources\\UiFeatures\\ApplicantDataValidationAPI.feature",
         glue = "stepdefinitions",
-        tags = "@US003",
+        tags = "@US023",
         dryRun = false
-
 )
 
-public class US002_Runner {
+public class US023_Runner {
 }

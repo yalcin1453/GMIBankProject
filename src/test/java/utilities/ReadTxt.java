@@ -1,6 +1,7 @@
 package utilities;
 
 
+import Pojos.AccountRegistration;
 import Pojos.Customer;
 
 import Pojos.Customer;
@@ -54,6 +55,31 @@ public class ReadTxt {
         }
         return all;
     }
+
+    public static List<States> returnallStates (String filePath){
+        List<States>all = new ArrayList<>();
+        try(BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+            System.out.println(line);
+            int i = 0;
+            while (line != null) {
+                States states = new States();
+                states.setName(line.split(",")[0].trim());
+                states.setId(Integer.parseInt(line.split(",")[1].trim()));
+                sb.append(System.lineSeparator());
+                line = br.readLine();
+                System.out.println(i++);
+                all.add(states);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return all;
+    }
+
+
+
     public static List<Customer> readTxtData(String filePath)throws  Exception{
         List<Customer> list = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader(filePath));
@@ -75,6 +101,30 @@ public class ReadTxt {
         }
         return list;
     }
+
+    public static List<AccountRegistration> readTxtAccountData(String filePath)throws  Exception{
+        List<AccountRegistration> list = new ArrayList<>();
+        BufferedReader br = new BufferedReader(new FileReader(filePath));
+        try {
+            StringBuilder sb = new StringBuilder();
+            String line = br.readLine();
+            AccountRegistration accountRegistration=new AccountRegistration();
+            while (line != null) {
+                sb.append(line);
+                sb.append(System.lineSeparator());
+                line = br.readLine();
+//                customer.setSsn(line);
+            }
+            String everything = sb.toString();
+            accountRegistration.setSsn(everything);
+            list.add(accountRegistration);
+        } finally {
+            br.close();
+        }
+        return list;
+    }
+
+
     public static List<States> returnAllStates(String filePath){
         List<States>all = new ArrayList<>();
         try(BufferedReader br = new BufferedReader(new FileReader(filePath))) {

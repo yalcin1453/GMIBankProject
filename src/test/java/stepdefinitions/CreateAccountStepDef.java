@@ -10,11 +10,7 @@ import utilities.Driver;
 public class CreateAccountStepDef {
 
 
-
-
   CreateAccountPage us_013= new CreateAccountPage();
-
-
 
 
 

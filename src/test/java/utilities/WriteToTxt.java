@@ -1,6 +1,8 @@
 package utilities;
 
+import Pojos.AccountRegistration;
 import Pojos.Customer;
+import Pojos.States;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -19,6 +21,18 @@ public class WriteToTxt {
         }
     }
 
+    public static void saveDataInFile(String fileName, AccountRegistration[] accountRegistrations) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+            for (int i = 0; i < accountRegistrations.length; i++)
+                writer.append(accountRegistrations[i].getSsn() + "\n");
+            writer.close();
+        } catch (Exception e) {
+        }
+    }
+
+
+
     public static void saveDataInFileWithSSN(String fileName, Customer customer) {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
@@ -36,6 +50,18 @@ public class WriteToTxt {
         } catch (Exception e) {
         }
     }
+
+    public static void saveAllStates(String fileName, States[] states) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+            for (int i = 0; i < states.length; i++)
+                writer.append(states[i].getName() + " , " + states[i].getId() + "\n");
+            writer.close();
+        } catch (Exception e) {
+        }
+    }
+
+
 
     public static void saveDataInFileWithAllCustomerInfo(String fileName, Customer[] customers) {
         try {

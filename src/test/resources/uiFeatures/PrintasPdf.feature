@@ -1,3 +1,4 @@
+@Pdf
 Feature: validate all data from customer
 
   Scenario: read and validate data using Db
