@@ -16,6 +16,19 @@ public class UserManagementPage {
     @FindBy(xpath="//dd[1]//span[1]")
     public WebElement userName;
 
+    @FindBy(xpath = "//input[@name='login']")
+    public WebElement userEditLogin;
+
+    @FindBy(xpath = "//input[@name='firstName']")
+    public WebElement userEditFirstName;
+
+    @FindBy(xpath = "//input[@name='lastName']")
+    public WebElement userEditLastName;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement userEditSaveButton;
+
+
     public UserManagementPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }

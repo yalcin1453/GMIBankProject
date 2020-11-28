@@ -40,6 +40,27 @@ Feature: System Should Allow Admin to Manage Users
     And admin click on view button "ROLE_EMPLOYEE"
     Then verify admin is on view page
 
+    Scenario: Admin can edit all user info
+      And admin click on edit button "ROLE_EMPLOYEE"
+      And Admin change all user info
+      Then verify user role activation
+
+  Scenario: Admin can edit all user info
+    And admin click on edit button "ROLE_MANAGER"
+    And Admin change all user info
+    Then verify user role activation
+
+  Scenario: Admin can edit all user info
+    And admin click on edit button "ROLE_USER"
+    And Admin change all user info
+    Then verify user role activation
+
+  Scenario: Admin can edit all user info
+    And admin click on edit button "ROLE_ADMIN"
+    And Admin change all user info
+    Then verify user role activation
+
+
 
 
 
