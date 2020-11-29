@@ -1,7 +1,7 @@
 package stepdefinitions;
 
-import Pojos.Country;
-import Pojos.Customer;
+import pojos.Country;
+import pojos.Customer;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

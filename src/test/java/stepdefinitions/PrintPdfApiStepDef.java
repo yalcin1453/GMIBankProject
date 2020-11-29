@@ -1,8 +1,7 @@
 package stepdefinitions;
 
-import Pojos.Country;
-import Pojos.Customer;
-import Pojos.States;
+import pojos.Country;
+import pojos.Customer;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.Given;

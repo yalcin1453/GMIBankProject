@@ -1,5 +1,5 @@
 package utilities;
-import Pojos.Customer;
+import pojos.Customer;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

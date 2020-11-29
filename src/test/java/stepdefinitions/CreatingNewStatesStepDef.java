@@ -1,14 +1,15 @@
 package stepdefinitions;
 
-import Pojos.States;
+import pojos.States;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import jsonModels.stateJson;
+import jsonModels.StateJson;
 import org.junit.Assert;
 import utilities.ConfigurationReader;
+import utilities.ReadTxt;
 
 import java.io.IOException;
 import java.util.List;
@@ -68,7 +69,7 @@ public class CreatingNewStatesStepDef {
                 ContentType.JSON,
                 "Accept",
                 ContentType.JSON)
-                .when().body(stateJson.CREATE_STATE2)
+                .when().body(StateJson.CREATE_STATE2)
                 .post(url)
                 .then()
                 .contentType(ContentType.JSON).statusCode(201)

@@ -1,4 +1,4 @@
-package Pojos;
+package pojos;
 
 public class AccountRegistration {
 

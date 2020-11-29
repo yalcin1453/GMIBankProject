@@ -1,8 +1,7 @@
 package utilities;
 
-import Pojos.Customer;
+import pojos.Customer;
 import com.itextpdf.text.Document;
-import com.itextpdf.text.Image;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Phrase;
 import com.itextpdf.text.pdf.PdfPCell;

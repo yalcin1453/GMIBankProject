@@ -1,14 +1,16 @@
 package stepdefinitions;
 
 
-import Pojos.AccountRegistration;
+import pojos.AccountRegistration;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.*;
 import org.junit.Assert;
+import pojos.Customer;
 import utilities.ConfigurationReader;
+import utilities.WriteToTxt;
 
 import java.io.IOException;
 import java.util.List;
@@ -23,6 +25,7 @@ public class ApplicantDataValidationStepDef {
     AccountRegistration [] accountRegistration;
     List<Map<String,Object>> applicantList ;
     JsonPath json;
+    int i;
 
 
     @Given("user provides api end point and set the response using {string}")
@@ -47,10 +50,10 @@ public class ApplicantDataValidationStepDef {
         }
     }
 
-    @Given("User sets the data in correspondent file")
-    public void user_sets_the_data_in_correspondent_file() {
-        WriteToTxt.saveDataInFile("NewFile1.txt",accountRegistration);
-    }
+//    @Given("User sets the data in correspondent file")
+//    public void user_sets_the_data_in_correspondent_file() {
+//        WriteToTxt.saveDataInFile("NewFile1.txt",);
+//    }
 
     @Then("User validates all the data")
     public void user_reads_all_the_data() throws Exception {

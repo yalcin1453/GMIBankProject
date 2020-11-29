@@ -8,6 +8,8 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import pojos.Customer;
 import utilities.ConfigurationReader;
+import utilities.ReadTxt;
+import utilities.WriteToTxt;
 
 import java.io.IOException;
 import java.util.List;
@@ -49,7 +51,7 @@ public class CustomerApiSteps {
 
     @Given("user sets the data in correspondent files")
     public void user_sets_the_data_in_correspondent_files() {
-        WriteToTxt.saveDataFileWithAllCustomerInfo(ConfigurationReader.getProperty("filePath_All_Customer_Data"),customers);
+        WriteToTxt.saveDataInFileWithAllCustomerInfo(ConfigurationReader.getProperty("filePath_All_Customer_Data"),customers);
         WriteToTxt.saveDataInFile("NewFile.txt ",customers);
     }
 

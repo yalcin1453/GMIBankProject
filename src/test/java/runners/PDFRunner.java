@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;@RunWith(Cucumber.class)
                 "junit:target/xml-report/cucumber.xml"
         },
         features ="src/test/resources/uiFeatures",
-        glue = "stepdefinitions",
+        glue = {"runners","stepdefinitions"},
         tags = "@Pdf",
         dryRun = false
 )

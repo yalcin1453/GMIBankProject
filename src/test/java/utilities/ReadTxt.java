@@ -1,6 +1,6 @@
 package utilities;
-import Pojos.Customer;
-import Pojos.States;
+import pojos.Customer;
+import pojos.States;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
